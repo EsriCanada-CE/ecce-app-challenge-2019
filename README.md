@@ -1,1 +1,5 @@
-# ecce-app-challenge-2019
+## About ECCE App Challenge:
+
+ The ECCE App Challenge is an annual competetition that engages teams of students at each of the [Esri Canada GIS Centers of Excellence](https://ecce.esri.ca/wpecce/schools/) in the creation of innovative GIS applications within a one-week period, using Esri technology and Open Data to address a specific theme.  Full details of the App Challenge can be found on the [ECCE website](https://ecce.esri.ca/wpecce/app-challenge/).  The ECCE App Challenge in 2019 is the fifth iteration of the competition, which has been held annually since 2015.  All submissions from student teams participating in the challenge in previous years remain available in the [2015](https://github.com/EsriCanada-CE/ecce-app-challenge-2015), [2016](https://github.com/EsriCanada-CE/ecce-app-challenge-2016), [2017](https://github.com/EsriCanada-CE/ecce-app-challenge-2017), and [2018](https://github.com/EsriCanada-CE/ecce-app-challenge-2018) repositories on GitHub.  Starting with the 2017, you may view team profiles, videos, and apps online through the [ECCE GitHub web page](https://esricanada-ce.github.io).
+
+ Stay tuned for results fron the ECCE App Challenge 2019!
