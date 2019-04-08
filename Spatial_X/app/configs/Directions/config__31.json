@@ -1,0 +1,38 @@
+{
+  "routeTaskUrl": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+  "travelModesUrl": "",
+  "trafficLayerUrl": "",
+  "routeOptions": {
+    "directionsLanguage": "en",
+    "directionsLengthUnits": "esriKilometers",
+    "impedanceAttribute": ""
+  },
+  "geocoderOptions": {
+    "autoComplete": true,
+    "maxLocations": 5,
+    "minCharacters": 3,
+    "searchDelay": 350,
+    "arcgisGeocoder": false,
+    "geocoders": [
+      {
+        "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "placeholder": "Find address or place"
+      }
+    ]
+  },
+  "defaultLocations": [
+    "",
+    ""
+  ],
+  "barrierLayers": {
+    "pointLayers": [
+      ""
+    ],
+    "polylineLayers": [
+      ""
+    ],
+    "polygonLayers": [
+      ""
+    ]
+  }
+}

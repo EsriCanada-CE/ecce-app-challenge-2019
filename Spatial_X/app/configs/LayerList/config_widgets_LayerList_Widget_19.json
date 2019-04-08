@@ -1,0 +1,60 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": false,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": false,
+    "Transparency": false,
+    "SetVisibilityRange": false,
+    "EnableOrDisablePopup": false,
+    "ControlLabels": false,
+    "MoveupOrMovedown": false,
+    "OpenAttributeTable": false,
+    "DescriptionOrShowItemDetailsOrDownload": false
+  },
+  "layerOptions": {
+    "recreational_supply_stores_2414": {
+      "display": true
+    },
+    "recreational_7868": {
+      "display": true
+    },
+    "museum_art_gallery_3860": {
+      "display": true
+    },
+    "groceries_6270": {
+      "display": true
+    },
+    "food_retail_3937": {
+      "display": true
+    },
+    "electronic_stores_932": {
+      "display": true
+    },
+    "cosmetics_salons_7359": {
+      "display": true
+    },
+    "clothing_stores_9797": {
+      "display": true
+    },
+    "epoi_kw_3511": {
+      "display": false
+    },
+    "greenspaceshp_900": {
+      "display": true
+    },
+    "walkablenetwork_k_5260": {
+      "display": false
+    },
+    "walkablenetwork_w_9637": {
+      "display": false
+    },
+    "buildings_kw_7659": {
+      "display": false
+    },
+    "csd_kwshp_4206": {
+      "display": false
+    }
+  }
+}

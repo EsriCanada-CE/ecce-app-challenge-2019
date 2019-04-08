@@ -1,0 +1,53 @@
+{
+  "legend": {
+    "arrangement": 0,
+    "autoUpdate": true,
+    "respectCurrentMapScale": true
+  },
+  "layerState": {
+    "recreational_supply_stores_2414": {
+      "selected": true
+    },
+    "recreational_7868": {
+      "selected": true
+    },
+    "museum_art_gallery_3860": {
+      "selected": true
+    },
+    "groceries_6270": {
+      "selected": true
+    },
+    "food_retail_3937": {
+      "selected": true
+    },
+    "electronic_stores_932": {
+      "selected": true
+    },
+    "cosmetics_salons_7359": {
+      "selected": true
+    },
+    "clothing_stores_9797": {
+      "selected": true
+    },
+    "epoi_kw_3511": {
+      "selected": false
+    },
+    "greenspaceshp_900": {
+      "selected": true
+    },
+    "walkablenetwork_k_5260": {
+      "selected": false
+    },
+    "walkablenetwork_w_9637": {
+      "selected": false
+    },
+    "buildings_kw_7659": {
+      "selected": false
+    },
+    "csd_kwshp_4206": {
+      "selected": false
+    }
+  },
+  "syncWithWebmap": false,
+  "showLegendForBasemap": false
+}

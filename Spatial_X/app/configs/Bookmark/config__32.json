@@ -1,0 +1,176 @@
+{
+  "bookmarks2D": [
+    {
+      "displayName": "All modes",
+      "name": "All modes",
+      "extent": {
+        "xmin": -8976909.376939693,
+        "ymin": 5372018.700983263,
+        "xmax": -8935633.381665753,
+        "ymax": 5394949.809468784,
+        "spatialReference": {
+          "wkid": 102100
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": true,
+      "layerOptions": {
+        "GRT_Stops_shapefile_1756_0": {
+          "selected": false
+        },
+        "recreational_supply_stores_2414": {
+          "selected": false
+        },
+        "recreational_7868": {
+          "selected": false
+        },
+        "museum_art_gallery_3860": {
+          "selected": false
+        },
+        "groceries_6270": {
+          "selected": false
+        },
+        "food_retail_3937": {
+          "selected": false
+        },
+        "electronic_stores_932": {
+          "selected": false
+        },
+        "cosmetics_salons_7359": {
+          "selected": false
+        },
+        "clothing_stores_9797": {
+          "selected": false
+        },
+        "epoi_kw_3511": {
+          "selected": false
+        },
+        "greenspaceshp_900": {
+          "selected": false
+        },
+        "walkablenetwork_k_5260": {
+          "selected": false
+        },
+        "walkablenetwork_w_9637": {
+          "selected": false
+        },
+        "buildings_kw_7659": {
+          "selected": false
+        },
+        "csd_kwshp_4206": {
+          "selected": false
+        },
+        "kml_5552": {
+          "selected": true
+        },
+        "kml_1194": {
+          "selected": false
+        }
+      },
+      "_uID": 11,
+      "isSaveExtent": true,
+      "thumbnail": "${appPath}/configs/Bookmark/thumbnail1550868148729.png"
+    },
+    {
+      "displayName": "Bus and Walk",
+      "name": "Bus and Walk",
+      "extent": {
+        "xmin": -8978858.521160971,
+        "ymin": 5373585.66006312,
+        "xmax": -8937582.525887031,
+        "ymax": 5396516.768548641,
+        "spatialReference": {
+          "wkid": 102100
+        },
+        "cache": {
+          "_parts": [
+            {
+              "extent": {
+                "xmin": -8978858.521160971,
+                "ymin": 5373585.66006312,
+                "xmax": -8937582.525887031,
+                "ymax": 5396516.768548641,
+                "spatialReference": {
+                  "wkid": 102100
+                }
+              },
+              "frameIds": [
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "thumbnail": "${appPath}/configs/Bookmark/thumbnail1550868148730.png",
+      "isInWebmap": false,
+      "isSaveLayers": true,
+      "layerOptions": {
+        "GRT_Stops_shapefile_1756_0": {
+          "selected": false
+        },
+        "recreational_supply_stores_2414": {
+          "selected": false
+        },
+        "recreational_7868": {
+          "selected": false
+        },
+        "museum_art_gallery_3860": {
+          "selected": false
+        },
+        "groceries_6270": {
+          "selected": false
+        },
+        "food_retail_3937": {
+          "selected": false
+        },
+        "electronic_stores_932": {
+          "selected": false
+        },
+        "cosmetics_salons_7359": {
+          "selected": false
+        },
+        "clothing_stores_9797": {
+          "selected": false
+        },
+        "epoi_kw_3511": {
+          "selected": false
+        },
+        "greenspaceshp_900": {
+          "selected": false
+        },
+        "walkablenetwork_k_5260": {
+          "selected": false
+        },
+        "walkablenetwork_w_9637": {
+          "selected": false
+        },
+        "buildings_kw_7659": {
+          "selected": false
+        },
+        "csd_kwshp_4206": {
+          "selected": true
+        },
+        "kml_5552": {
+          "selected": false
+        },
+        "kml_1194": {
+          "selected": true
+        }
+      },
+      "_uID": 12,
+      "isSaveExtent": true
+    }
+  ],
+  "bookmarks3D": [],
+  "layout": {
+    "cards": true,
+    "list": false,
+    "defaultMode": "cards"
+  },
+  "editable": false,
+  "syncMode": {
+    "webmap": true,
+    "custom": true
+  },
+  "isSaveLayerVisibility": false
+}

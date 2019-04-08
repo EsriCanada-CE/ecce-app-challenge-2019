@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/nav_projects" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_stars_white_24dp"
+            android:title="@string/nav_bookmark" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="@string/nav_contact" />
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/nav_share"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_menu_share"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="Share" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<item&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/nav_contact"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:icon="@drawable/ic_contact_mail_black_24dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:title="@string/nav_contact" />&ndash;&gt;-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

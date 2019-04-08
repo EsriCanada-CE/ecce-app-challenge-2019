@@ -1,0 +1,105 @@
+{
+  "bookmarks2D": [
+    {
+      "displayName": "POI",
+      "name": "POI",
+      "extent": {
+        "xmin": -8971482.347931461,
+        "ymin": 5377006.217078877,
+        "xmax": -8950844.350294491,
+        "ymax": 5388471.7713216385,
+        "spatialReference": {
+          "wkid": 102100
+        },
+        "cache": {
+          "_parts": [
+            {
+              "extent": {
+                "xmin": -8971482.347931461,
+                "ymin": 5377006.217078877,
+                "xmax": -8950844.350294491,
+                "ymax": 5388471.7713216385,
+                "spatialReference": {
+                  "wkid": 102100
+                }
+              },
+              "frameIds": [
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "isInWebmap": false,
+      "isSaveLayers": true,
+      "layerOptions": {
+        "GRT_Stops_shapefile_1756_0": {
+          "selected": true
+        },
+        "recreational_supply_stores_2414": {
+          "selected": true
+        },
+        "recreational_7868": {
+          "selected": true
+        },
+        "museum_art_gallery_3860": {
+          "selected": true
+        },
+        "groceries_6270": {
+          "selected": true
+        },
+        "food_retail_3937": {
+          "selected": true
+        },
+        "electronic_stores_932": {
+          "selected": true
+        },
+        "cosmetics_salons_7359": {
+          "selected": true
+        },
+        "clothing_stores_9797": {
+          "selected": true
+        },
+        "epoi_kw_3511": {
+          "selected": true
+        },
+        "greenspaceshp_900": {
+          "selected": true
+        },
+        "walkablenetwork_k_5260": {
+          "selected": true
+        },
+        "walkablenetwork_w_9637": {
+          "selected": true
+        },
+        "buildings_kw_7659": {
+          "selected": true
+        },
+        "csd_kwshp_4206": {
+          "selected": true
+        },
+        "kml_5552": {
+          "selected": false
+        },
+        "kml_1194": {
+          "selected": false
+        }
+      },
+      "_uID": 3,
+      "isSaveExtent": true,
+      "thumbnail": "${appPath}/configs/Bookmark/thumbnail1550868148735.png"
+    }
+  ],
+  "bookmarks3D": [],
+  "layout": {
+    "cards": true,
+    "list": false,
+    "defaultMode": "cards"
+  },
+  "editable": false,
+  "syncMode": {
+    "webmap": true,
+    "custom": true
+  },
+  "isSaveLayerVisibility": false
+}
