@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/ThreatAnalysis/setting/nls/strings":{transparencyLabel:"Transparens",outline:"Kontur",fill:"Fyllningsf\u00e4rg (F\u00e4rgen till\u00e4mpas enbart n\u00e4r stilen anges till solid)",style:"Format",mandatoryLabel:"Obligatorisk evakueringsdistans",mandatoryButtonLabel:"Konfigurera inst\u00e4llningar f\u00f6r obligatorisk evakueringsdistans",safeLabel:"S\u00e4ker evakueringsdistans",safeButtonLabel:"Konfigurera inst\u00e4llningar f\u00f6r s\u00e4ker evakueringsdistans",lineStyles:{esriSLSDash:"Streck",
+esriSLSDashDot:"Streck punkt",esriSLSDashDotDot:"Streck punkt punkt",esriSLSDot:"Punkt",esriSLSLongDash:"L\u00e5ngt streck",esriSLSLongDashDot:"L\u00e5ng streck-punkt",esriSLSNull:"Null",esriSLSShortDash:"Kort streck",esriSLSShortDashDot:"Kort streck-punkt",esriSLSShortDashDotDot:"Kort streck-punkt-punkt",esriSLSShortDot:"Kort punkt",esriSLSSolid:"Solid"},fillStyles:{esriSFSBackwardDiagonal:"Bak\u00e5t",esriSFSCross:"Kors",esriSFSDiagonalCross:"Diagonal",esriSFSForwardDiagonal:"Fram\u00e5t",esriSFSHorizontal:"Horisontell",
+esriSFSNull:"Null",esriSFSSolid:"Solid",esriSFSVertical:"Vertikal"},_localized:{}}});

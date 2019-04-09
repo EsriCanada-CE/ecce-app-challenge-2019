@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/ThreatAnalysis/setting/nls/strings":{transparencyLabel:"Transparencia",outline:"Lista",fill:"Relleno (el color solo se aplica si el estilo es s\u00f3lido)",style:"Estilo",mandatoryLabel:"Distancia de evacuaci\u00f3n obligatoria",mandatoryButtonLabel:"Configurar los ajustes de Distancia de evacuaci\u00f3n obligatoria",safeLabel:"Distancia de evacuaci\u00f3n segura",safeButtonLabel:"Configurar los ajustes de Distancia de evacuaci\u00f3n segura",lineStyles:{esriSLSDash:"Guion",esriSLSDashDot:"Guion Punto",
+esriSLSDashDotDot:"Guion Punto Punto",esriSLSDot:"Punto",esriSLSLongDash:"Guion largo",esriSLSLongDashDot:"Guion largo, Punto",esriSLSNull:"Nulo",esriSLSShortDash:"Guion corto",esriSLSShortDashDot:"Guion corto Punto",esriSLSShortDashDotDot:"Guion corto Punto Punto",esriSLSShortDot:"Corto Punto",esriSLSSolid:"S\u00f3lido"},fillStyles:{esriSFSBackwardDiagonal:"Atr\u00e1s",esriSFSCross:"Cruz",esriSFSDiagonalCross:"Diagonal",esriSFSForwardDiagonal:"Hacia delante",esriSFSHorizontal:"Horizontal",esriSFSNull:"Nulo",
+esriSFSSolid:"S\u00f3lido",esriSFSVertical:"Vertical"},_localized:{}}});

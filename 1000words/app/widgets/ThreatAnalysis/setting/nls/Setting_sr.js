@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/ThreatAnalysis/setting/nls/strings":{transparencyLabel:"Prozirnost",outline:"Kontura",fill:"Popuna (boja se primenjuje samo kada je stil pode\u0161en da bude neproziran)",style:"Stil",mandatoryLabel:"Obavezna evakuaciona razdaljina",mandatoryButtonLabel:"Konfiguri\u0161ite postavke obavezne evakuacione razdaljine",safeLabel:"Bezbedna evakuaciona razdaljina",safeButtonLabel:"Konfiguri\u0161ite postavke bezbedne evakuacione razdaljine",lineStyles:{esriSLSDash:"Crta",esriSLSDashDot:"Crta ta\u010dka",
+esriSLSDashDotDot:"Crta ta\u010dka ta\u010dka",esriSLSDot:"Ta\u010dka",esriSLSLongDash:"Duga crta",esriSLSLongDashDot:"Duga crta ta\u010dka",esriSLSNull:"Null",esriSLSShortDash:"Kratka crta",esriSLSShortDashDot:"Kratka crta ta\u010dka",esriSLSShortDashDotDot:"Kratka crta ta\u010dka ta\u010dka",esriSLSShortDot:"Kratka ta\u010dka",esriSLSSolid:"Neprozirno"},fillStyles:{esriSFSBackwardDiagonal:"Unazad",esriSFSCross:"Krst",esriSFSDiagonalCross:"Dijagonalno",esriSFSForwardDiagonal:"Unapred",esriSFSHorizontal:"Horizontalno",
+esriSFSNull:"Null",esriSFSSolid:"Neprozirno",esriSFSVertical:"Vertikalno"},_localized:{}}});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["jimu/shared/BaseVersionManager"],function(d){function b(){this.versions=[{version:"1.0",upgrader:function(a){return a}},{version:"1.1",upgrader:function(a){return a}},{version:"1.2",upgrader:function(a){return a}},{version:"1.3",upgrader:function(a){return a}},{version:"1.4",upgrader:function(a){return a}},{version:"2.0Beta",upgrader:function(a){return a}},{version:"2.0",upgrader:function(a){return a}},{version:"2.0.1",upgrader:function(a){return a}},{version:"2.1",upgrader:function(a){return a}},
+{version:"2.2",upgrader:function(a){for(var c=a.filters,b=0;b<c.length;b++)c[b].enableMapFilter=!0;return a}},{version:"2.3",upgrader:function(a){return a}},{version:"2.4",upgrader:function(a){return a}},{version:"2.5",upgrader:function(a){return a}},{version:"2.6",upgrader:function(a){a.collapse=!1;return a}},{version:"2.7",upgrader:function(a){a.collapse&&a.filters&&a.filters.forEach(function(a){a.collapse=!0});return a}},{version:"2.8",upgrader:function(a){return a}},{version:"2.9",upgrader:function(a){a.taskOper=
+"AND";a.groupByLayer=!1;return a}}]}b.prototype=new d;return b.prototype.constructor=b});
