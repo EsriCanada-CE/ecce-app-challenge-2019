@@ -1,0 +1,35 @@
+{
+  "splash": {
+    "splashContent": "<div> </div>\n\t<div><font size=\"6\">Welcome to GoSolar!</font></div><div><font size=\"6\"><br /></font></div><div><font size=\"6\"><font size=\"4\">In every community, including Ottawa, rooftops are wasted space! Why not put that space to good use and produce energy to power our community more sustainably. This app shows the solar radiation received by rooftops in the Ottawa area to inform community members if their house if suitable for solar panels. Just search for an address within Ottawa to begin!</font><br /></font></div>",
+    "requireConfirm": false,
+    "confirm": {
+      "text": "",
+      "color": "#ffffff",
+      "transparency": 0
+    },
+    "showOption": false,
+    "confirmEverytime": true,
+    "contentVertical": "top",
+    "size": {
+      "mode": "percent",
+      "percent": "75%",
+      "wh": {
+        "w": 600,
+        "h": 264
+      }
+    },
+    "background": {
+      "mode": "image",
+      "image": "${appPath}/configs/Splash/image1552441286781.jpeg",
+      "type": "fill",
+      "fileName": "solar-energy-2157212_1920.jpg",
+      "color": "#485566",
+      "transparency": 0
+    },
+    "button": {
+      "color": "#ffd700",
+      "transparency": 0,
+      "text": "Let's Go!"
+    }
+  }
+}
