@@ -8,7 +8,7 @@ The goal of the SMART mobile application is to use Augmented Reality and GIS tec
 
 ## Team SpectaculAR
 
-![20190220_145450.jpg](https://www.dropbox.com/s/o63pv8ac002x0l1/20190220_145450.jpg?dl=0&raw=1)
+![20190220_145450.jpg](./images/team.jpg)
 
 ### Team Member Bios:
 
