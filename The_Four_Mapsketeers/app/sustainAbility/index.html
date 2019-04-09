@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="description" content="Calcite Maps Demo - ArcGIS">
+	<link rel="icon" href="https://www.esri.com/favicon.ico">
+	<title>sustainAbility</title>
+
+	<!-- Calcite Maps Bootstrap -->
+	<link rel="stylesheet" href="dist/css/calcite-maps-bootstrap.min-v0.10.css">
+
+	<!-- Calcite Maps -->
+	<link rel="stylesheet" href="dist/css/calcite-maps-arcgis-4.x.min-v0.10.css">
+	<!--link rel="stylesheet" href="../../dist/css/calcite-maps.min-v0.10.css"--> <!-- works -->
+
+	<!-- ArcGIS JS 4 -->
+	<link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+
+	<!-- App related -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body class="calcite-maps calcite-nav-top">
+
+	<!-- Navbar -->
+	<nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark calcite-bgcolor-true-black">
+		<!-- Menu -->
+		<div class="dropdown calcite-dropdown calcite-bg-light calcite-text-dark" role="presentation">
+			<a class="dropdown-toggle" role="menubutton" aria-haspopup="true" aria-expanded="false" tabindex="0">
+			<div class="calcite-dropdown-toggle">
+				<span class="sr-only">Toggle dropdown menu</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			</a>
+			<ul class="dropdown-menu calcite-menu-drawer">
+				<li><a role="menuitem" tabindex="0" data-target="#panelInfo" aria-haspopup="true"><span class="glyphicon glyphicon-info-sign"></span>Info</a></li>
+				<li><a role="menuitem" tabindex="0" data-target="#panelBasemaps" aria-haspopup="true"><span class="glyphicon glyphicon-th-large"></span>Basemaps</a></li>
+				<li><a role="menuitem" tabindex="0" id="calciteToggleNavbar" aria-haspopup="true"><span class="glyphicon glyphicon-fullscreen"></span>Full Map</a></li>
+			</ul>
+		</div>
+		
+		<!-- Title -->
+		<div class="calcite-title calcite-overflow-hidden">
+			<img src = "https://i.imgur.com/CjTkJze.png?1" class = "top_logo"> 
+			<span class="calcite-title-divider hidden-xs"></span>
+			<span class="calcite-title-main"></span>
+		</div>
+    
+		<!-- Nav -->
+		<ul class="calcite-nav nav navbar-nav">
+			<li>
+				<div class="calcite-navbar-search calcite-search-expander" role="presentation" tabindex="-1">
+					<div id="searchNavDiv" tabindex="0"></div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!--/.navbar -->
+
+	<!-- Map Container  -->
+	<div class="calcite-map calcite-map-absolute">
+		<div id="tabContainer" class="tab-content">			
+			<div id="mapTab" class="tab-pane fade in active" role="tabpanel">
+			
+				<!-- Side bar -->
+				<div id="sidebarDiv">
+				
+					<!-- Tab links -->
+					<div class="tab">
+						<button class="tablinks 1" id="defaultOpen"><span class="glyphicon glyphicon-signal"></span>&nbsp;Compare</button>
+						<button class="tablinks 2"><span class="glyphicon glyphicon-apple"></span>&nbsp;Food</button>
+						<button class="tablinks 3"><span class="glyphicon glyphicon-road"></span>&nbsp;Transport</button>
+						<button class="tablinks 4"><span class="glyphicon glyphicon-home"></span>&nbsp;Housing</button>
+					</div>
+					
+					<!-- Tab content -->
+					<div id="Tab1" class="tabcontent">
+						<h3>Community Sustainability Evaluation</h3>
+						<p>How sustainable is your community compared to other? Please rank the below factors based on their importance to you. When you are done, refresh the map. You may click on any community you wish to examine, and it's relative ranking and other statistics will appear for you to view. If a certain criteria is not important to you, you may switch it off using the toggles.</p>
+						
+						<!-- Factor 1 -->
+						<div class="parentSliderContainer">
+							<table class="sliderContainer">
+								<tr>
+									<td>
+										<label class="togSwitch">
+											<input id="greenSwitch" type="checkbox" checked>
+											<span class="ts_slider round"></span>
+										</label>
+										<label class="catLabel">How important are green spaces to you?</label>
+									</td>
+
+									<td></td>
+								</tr>
+								
+								<tr>
+									<td>
+										<input type="range" min="1" max="10" value="10" class="slider" id="greenSlider">
+									</td>
+									
+									<td class="labelColumn">
+										<em id="greenLabel" class="sliderLabel"></em>
+									</td>
+								</tr>
+							</table>
+							
+							<button id="collapsible1Button" class="collapsible">Factors</button>
+							<div class="collapsibleContent">
+								<div class="innerSliderContainer">
+									<label class="catLabel">Green space in your community</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="green1Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="green1Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Number of trees in your community</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="green2Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="green2Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Factor 2 -->
+						<div class="parentSliderContainer">							
+							<table class="sliderContainer">
+								<tr>
+									<td>
+										<label class="togSwitch">
+											<input id="connectSwitch" type="checkbox" checked>
+											<span class="ts_slider round"></span>
+										</label>
+										<label class="catLabel">How important is having effective and reliable transportation to you?</label>
+									</td>
+									
+									<td></td>
+								</tr>
+								
+								<tr>
+									<td>
+										<input type="range" min="1" max="10" value="10" class="slider" id="connectSlider">
+									</td>
+									
+									<td class="labelColumn">
+										<em id="connectLabel" class="sliderLabel"></em>
+									</td>
+								</tr>
+							</table>
+							
+							<button id="collapsible2Button" class="collapsible">Factors</button>
+							<div class="collapsibleContent">
+								<div class="innerSliderContainer">
+									<label class="catLabel">Road Quality</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="connect1Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="connect1Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Accessible Bikeways</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="connect2Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="connect2Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Accessible Walkways</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="connect3Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="connect3Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Availability of Bus stops</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="connect4Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="connect4Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Availability of Train stations (LRT)</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="connect5Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="connect5Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Factor 3 -->
+						<div class="parentSliderContainer">
+							<table class="sliderContainer">
+								<tr>
+									<td>
+										<label class="togSwitch">
+											<input id="compactnessSwitch" type="checkbox" checked>
+											<span class="ts_slider round"></span>
+										</label>
+										<label class="catLabel">How important is living close to businesses and work? Do you prefer single family housing or multi-tenant buildings?</label>
+									</td>
+									
+									<td></td>
+								</tr>
+								
+								<tr>
+									<td>
+										<input type="range" min="1" max="10" value="10" class="slider" id="compactnessSlider">
+									</td>
+									
+									<td class="labelColumn">
+										<em id="compactnessLabel" class="sliderLabel"></em>
+									</td>
+								</tr>
+							</table>
+							
+							<button id="collapsible3Button" class="collapsible">Factors</button>
+							<div class="collapsibleContent">
+								<div class="innerSliderContainer">
+									<label class="catLabel">Population Density</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="compact1Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="compact1Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+									
+									<label class="catLabel">Proximity of businesses</label>
+									<table class="innerSliderContainer">
+										<tr>
+											<td>
+												<input type="range" min="1" max="10" value="10" class="slider" id="compact2Slider">
+											</td>
+											
+											<td class="labelColumn">
+												<em id="compact2Label" class="sliderLabel"></em>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>  
+					
+						<button id="refreshButton" type="button" class="btn btn-info btn-lg">
+							<span class="glyphicon glyphicon-refresh"></span> Refresh Map
+						</button>
+					</div>
+
+					<div id="Tab3" class="tabcontent">
+						<h3>sustain<em>A</em>ble Transport</h3>
+						<p>How much money can you save by switching to public transit, biking, or walking?</p>
+						<p>How much can greenhouse gas emissions be reduced?</p>
+						
+						<div class="parentSliderContainer">							
+							<table class="sliderContainer">
+								<tr>
+									<td>
+										<label class="catLabel">How many days a week do you plan to walk or bike this route?</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="range" min="0" max="7" value="0" class="slider" id="alt_transit_Slider">
+									</td>
+									
+									<td class="labelColumn">
+										<em id="alt_transit_SliderLabel" class="sliderLabel"></em>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="parentSliderContainer">							
+							<table class="sliderContainer">
+								<tr>
+									<td>
+										<label class="catLabel">What is your car's fuel efficiency in L / 100 km?</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="range" min="2" max="14" value="9" step = "0.1" class="slider" id="fuel_economy_Slider">
+									</td>
+									
+									<td class="labelColumn">
+										<em id="fuel_economy_SliderLabel" class="sliderLabel"></em>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<p>Please set your home and away markers</p>
+
+						<p><button class="locationBtns btn btn-info btn-lg glyphicon glyphicon-home" id="homeButton" type="button" title="Set Home"></button>&nbsp;Set Home Marker</p>
+						<p><button class="locationBtns btn btn-success btn-lg glyphicon glyphicon-briefcase" id="awayButton" type="button" title="Set Away"></button>&nbsp;Set Away Marker</p>
+						<p><button class="locationBtns btn btn-danger btn-lg glyphicon glyphicon-remove-circle" id="removeMarkersButton" type="button" title="Clear Markers"></button>&nbsp;Clear Markers</p>
+						
+						<div class="transportInfo">
+							<label class="catLabel">Distance traveled for a round trip</label>
+							<br>
+							<label id="transportationDistance">0.0 km</label>
+							<br>
+							<label class="catLabel transportTitle">Emission per day</label>
+							<br>
+							<label id="transportationEmissionDay">0.0 kg CO2</label>
+							<br>
+							<label class="catLabel transportTitle">Emission per week</label>
+							<br>
+							<label id="transportationEmissionWeek">0.0 kg CO2</label>
+							<br>
+							<label class="catLabel transportTitle">Emission per month</label>
+							<br>
+							<label id="transportationEmissionMonth">0.0 kg CO2</label>
+							<br>
+							<label class="catLabel transportTitle">Emission per Year</label>
+							<br>
+							<label id="transportationEmissionYear">0.0 kg CO2</label>
+						</div>
+					</div>
+					
+
+					<div id="Tab2" class="tabcontent">
+						<h3>sustain<em>A</em>ble Food</h3>
+						<p>How much food could you grow in your yard or a community garden?</p>
+						<p>How much can greenhouse gas emissions be reduced, by eliminating food transport distance?</p>
+						
+						<div class="foodInfo">
+							<p><button class="locationBtns btn btn-success btn-lg glyphicon glyphicon-leaf" id="gardenButton" type="button" title="Set Garden"></button>&nbsp;Plot your garden bed</p>
+							<p><button class="locationBtns btn btn-danger btn-lg glyphicon glyphicon-remove-circle" id="removegardenButton" type="button" title="Delete Garden"></button>&nbsp;Remove Current Garden Beds</p>
+						</div>
+						
+						<label class="catLabel">Which crop are you planning on planting?</label>
+						<select id="foodDropdown" name="produce">
+							<option value="empty"></option>
+							<option value="carrot">Carrot</option>
+							<option value="cucumber">Cucumber</option>
+							<option value="onion">Onion</option>
+							<option value="potato">Potato</option>
+							<option value="tomato">Tomato</option>
+						</select>
+						
+						<div class="foodInfo">
+							<label class="catLabel">Total yield of crop:</label>
+							<br>
+							<label id="foodYield">0.0 kg</label>
+						</div>
+						
+						<div class="foodInfo">
+							<label id="foodTitle" class="catLabel">Greenhouse Gases reduction</label>
+							<label class="catLabel">If this crop normally comes from British Columbia [500 - 1000 km]</label>
+							<br>
+							<label id="ghgBC">0.0 - 0.0 kg CO2</label>
+							<br>
+							<label class="catLabel">If this crop normally comes from California [1500 - 2500 km]</label>
+							<br>
+							<label id="ghgCali">0.0 - 0.0 kg CO2</label>
+						</div>
+
+					</div>
+					
+					<div id="Tab4" class="tabcontent">
+						<h3>sustain<em>A</em>ble Housing</h3>
+						<p>Could you help densify your community by renting out a secondary suite on your property?</p>
+						<br>
+						<p>Click on where you live to see the correspondent land use designation code.</p>
+						<br>
+						<p><b>Permited: </b><i>R-C1Ls, R-C1s, R-C2, R-1s, R-2, R-2M, R-CG, M-CG, R-G, R-Gm</i></p>
+						<br>
+						<p><b>Discretionary: </b><i>R-C1L, R-C1, R-C1N, R-1, R-1N</i></p>
+						<br>
+						<p>Learn more <a href="http://www.calgary.ca/PDA/pd/Pages/Home-building-and-renovations/Secondary-Suites.aspx?redirect=/suites">here</a>.<p>
+					</div>
+				</div>
+				
+				<!-- Map -->
+				<div id="mapViewDiv"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Panel Container -->
+
+	<div class="calcite-panels calcite-panels-right calcite-bg-custom calcite-text-light calcite-bgcolor-true-black panel-group" role="tablist" aria-multiselectable="true">
+
+		<!-- Info Panel -->
+		
+		<div id="panelInfo" class="panel collapse">
+			<div id="headingInfo" class="panel-heading" role="tab">
+				<div class="panel-title">
+					<a class="panel-toggle" role="button" data-toggle="collapse" href="#collapseInfo"  aria-expanded="true" aria-controls="collapseInfo"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="panel-label">Info</span></a> 
+					<a class="panel-close" role="button" data-toggle="collapse" tabindex="0" href="#panelInfo"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>  
+				</div>
+			</div>
+			
+			<div id="collapseInfo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingInfo">
+				<div class="panel-body">
+					<p>
+						<b>sustainAbility</b>
+						<br>
+						<i>Created by The Four Mapsketeers</i>
+						<br><br>
+						This application was created to empower the citizens of Calgary to make changes in their life and to help create more sustainable communities.
+						The primary goal of this application is to bridge the gap between Calgary's city-wide policies (MDP) and its citizen engagement. 
+						<br><br>
+						This application allows the user to define what sustainability means to them on their own terms and to evaluate the communities in their city based on this definition.
+						We believe that greening the city, connecting the city, and city compactness are areas that individual citizens will have the most impact through making attainable changes in their lives.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Basemaps Panel -->
+		
+		<div id="panelBasemaps" class="panel collapse"> 
+			<div id="headingBasemaps" class="panel-heading" role="tab">
+				<div class="panel-title">
+					<a class="panel-toggle collapsed" role="button" data-toggle="collapse" href="#collapseBasemaps" aria-expanded="false"   aria-controls="collapseBasemaps"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span><span class="panel-label">Basemaps</span></a> 
+					<a class="panel-close" role="button" data-toggle="collapse" tabindex="0" href="#panelBasemaps"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>  
+				</div>
+			</div>
+			<div id="collapseBasemaps" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBasemaps">
+				<div class="panel-body">
+					<select id="selectBasemapPanel" class="form-control">
+						<option value="streets" data-vector="streets-vector">Streets</option>
+						<option value="satellite" data-vector="satellite">Satellite</option>
+						<option value="hybrid" data-vector="hybrid">Hybrid</option>
+						<option value="national-geographic" data-vector="national-geographic">National Geographic</option>
+						<option value="topo" data-vector="topo-vector">Topographic</option>
+						<option value="gray" data-vector="gray-vector" selected>Gray</option>
+						<option value="dark-gray" data-vector="dark-gray-vector">Dark Gray</option>
+						<option value="osm" data-vector="osm">Open Street Map</option>
+						<option value="dark-gray" data-vector="streets-night-vector">Streets Night</option>
+						<option value="streets" data-vector="streets-navigation-vector">Streets Mobile</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /.calcite-panels -->
+
+	<script type="text/javascript">
+		var dojoConfig = {
+			packages: [{
+				name: "bootstrap",
+				location: location.pathname.replace(/\/[^/]+$/, "") + "./dist/vendor/dojo-bootstrap"
+			},
+			{
+				name: "calcite-maps",
+				location: location.pathname.replace(/\/[^/]+$/, "") + "./dist/js/dojo"
+			}]
+		};
+	</script>
+
+	<!-- ArcGIS JS 4 -->
+	<script src="https://js.arcgis.com/4.10/"></script>
+
+	<!-- App related script -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Rubik"
+}
+
+.top_logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.content {
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+    padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+h1 {
+    font-size: 1em;
+    margin: 0 0 0 0;
+    padding-bottom: 15px;
+	padding-top: 20px;
+}
+
+body {
+    background-image: url("https://i.imgur.com/FX8nRYp.jpg");
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+
+.backdrop{
+    background-color: white;
+    background-size: cover;
+    padding: 35px;
+    height: 100%;
+}
+
+a.button:visited{
+	color:inherit;
+}
+
+button {
+  background: #00BFFF;
+  color: white
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  
+}
+
+button:active {
+  background: #006400;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+   color: white;
+}
+
+button:hover {
+  background: #006400;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+   color: white;
+}
+
+
+
+.cimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}

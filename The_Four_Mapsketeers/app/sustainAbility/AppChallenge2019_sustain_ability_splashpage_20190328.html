@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>sustainABILITY by the 4 mapsketeers</title>
+    <!-- Calcite Bootstrap -->
+    <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-bootstrap.min-v0.2.css">
+    <!-- Calcite Maps -->
+    <link rel="stylesheet" href="https://esri.github.io/calcite-maps/dist/css/calcite-maps-arcgis-4.x.min-v0.2.css">
+
+    <!-- ArcGIS JS 4.0 -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+
+    <link rel="stylesheet" href="./style_splash.css">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Rubik">
+
+	</style>
+</head>
+
+<body>
+	    <!-- Navbar -->
+
+	<nav class="navbar calcite-nav-top calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark" role="navigation">
+	    <!--div class="container"-->
+			<div class="navbar-collapse collapse" id="navbar">
+			  <ul class="nav navbar-nav">
+				<li class="active">
+				  <a href="#home"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
+				</li>
+				<li>
+				  <a href="#Mission_Statement"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Mission Statement</a>
+				</li>
+				<li>
+				  <a role="button" href="README.html"><span class="glyphicon glyphicon-play"></span>&nbsp;App</a>
+				</li>
+
+				<li>
+				  <a href="#How_To"><span class="glyphicon glyphicon-star"></span>&nbsp;Features</a>
+				</li>
+				<li>
+				  <a href="#F_ex"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Explanations</a>
+				</li>			
+				<li>
+				  <a href="#Data"><span class="glyphicon glyphicon-save"></span>&nbsp;Sources</a>
+				</li>
+				<li>
+				  <a href="#Team"><span class="glyphicon glyphicon-user"></span>&nbsp;Team</a>
+				</li>
+				<div class="calcite-navbar-search calcite-search-expander">
+								<div id="searchWidgetDiv"></div>
+				</div>
+			  </ul>
+				
+			</ul>
+			</div><!--/.nav-collapse -->
+		<!--/div-->
+	</nav><!-- /.navbar -->
+    <!--/.calcite-navbar -->
+
+	<div class="content">
+	    <img src="https://i.imgur.com/SKusPbm.png" id = "home" class = "top_logo" alt="">
+	    <div class="container">
+			<div class="backdrop">
+					<br>
+					<h1>by the <em>4</em> mapsketeers</h1>
+
+					<h1>Submission for the 2019 Esri App Challenge</h1>
+
+
+					<h2 id = "App"></h2>
+					<a class="button" href = "./index.html"><button>CHECK OUT THE APP!</button></a>
+					<br>
+					<br>
+					
+					<h2 id = "Mission_Statement">Mission Statement</h2>
+					<p>As the world densifies and urban areas become a major hub for human social and economic growth, countries around the world are putting more emphases on urban sustainability. To achieve global sustainability and prosperity for all, The United Nations has developed 17 <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals</a>, that aim to act as guidelines to achieve all goals by 2030. Goal 11 directly deals with Sustainable Cities and Communities and provides a basic outline of the targets.</p>
+					<p>Recognizing the importance of sustainability, The City of Calgary has developed sustainability strategies and goals. The first being <a href="http://www.calgary.ca/PDA/pd/Documents/municipal-development-plan/2020-sustainability-direction.pdf">The 2020 Sustainability Direction Report</a>, which outlines the city’s sustainability tactics to make the city sustainable now without compromising future generations and their needs. The second is incorporated into Calgary’s <a href="http://www.calgary.ca/PDA/pd/Pages/Municipal-Development-Plan/Goals-for-a-Well-Planned-Calgary.aspx">Municipal Development Plan</a> (MDP). The MDP outlines 6 city-wide policies for making Calgary a sustainable city: 1. Prosperous economy, 2. Shaping a more compact urban form, 3. Creating great communities, 4. Urban design, 5. Connecting the city, 6. Greening the city.  </p>
+					<p>The city of Calgary is our home. Therefore, we decided to create an application for Calgarians which has the potential to empower citizens to make changes in their life and to help create more sustainable communities. The goal of this application is to bridge the gap between Calgary's city-wide policies and its citizen engagement. Since sustainability can be defined in different terms by different individuals, this application allows the user to define what sustainability means to them on their own terms and evaluate the communities in their city based on their definition. We believe that greening the city, connecting the city, and city compactness are areas that individuals can have the most impact on by making achievable changes in their lives. These aspects are the focus of this application. </p>
+					<br>
+					<br>
+					
+					
+					<h2 id = "How_To">Characteristics of the App</h2>
+					
+					<ol>
+					<li><p><strong>Community Sustainability Evaluation</strong></p>
+					<p>The community sustainability evaluation feature allows you to view the relative sustainability of communities within the City of Calgary. The sustainability of a community is based on categories derived from <a href="http://www.calgary.ca/PDA/pd/Pages/Municipal-Development-Plan/Goals-for-a-Well-Planned-Calgary.aspx">Calgary's Municipal government plan</a>. The chosen categories are "Green the City", "Connect the City", and "Compactness". These goals represent part of Calgary's effort to plan for its growing population over the next 30-60 years in a sustainable fashion. The goal of this feature is to allow you to view Calgary's communities through the lens of sustainability, to see which communities are effectively addressing sustainability, and which have room for improvement. While the city has its own definitions for sustainability, we recognize that each citizen will have their own priorities and opinions on which aspects of sustainability are most important to them. This is why we allow you to choose which metrics are the most important to <strong>you</strong>. Each criteria, and each evaluation metric, has an associated slider in the app, letting you choose its impact from 0-10. You are able and encouraged to choose how much impact each component has on the final evaluation. For example, you may consider having more green-spaces in a community important, but may not want a densely populated neighborhood.</p>
+					<br>
+					
+					<p><img src="https://i.imgur.com/FX8nRYpl.jpg"  class="cimg" alt="alt text" title="" /></p>
+					<br>
+					
+					<p>The "Green the City" metric is based on these elements:</p>
+
+					<ul><li>Amount of green-space in the community </li>
+					<li>Amount of trees in the community</li></ul>
+					<br>
+
+					<p>The "Connect the City" metric is based on these elements:</p>
+
+					<ul><li>Amount and quality of roads</li>
+					<li>Amount and quality of bikeways</li>
+					<li>Amount and quality of walkways</li>
+					<li>Accessibility of bus transport</li>
+					<li>Accessibility of bus transport</li></ul>
+					<br>
+					
+					<p>The "Compactness" metric is based on these elements: population and business density within the community.</p>
+
+					<ul><li>Population density within the community</li>
+					<li>Business density within the community</li></ul></li>
+					<br>
+					
+					<li><p><strong>Sustain<em>A</em>ble Food</strong></p>
+
+					<p><img src="https://i.imgur.com/91KleUWl.jpg"  class="cimg" alt="alt text" title="" /></p>
+					<br>
+					
+					<p>A garden can be utilized for growing produce, even in Calgary's cold climate.  Food grown in a local garden can be shared across a community, or used personally. Food produced in these gardens travels right from garden to table, rather than being shipped from British Columbia, California, or further. This reduces the amount of Greenhouse Gases (GHGs) released into the atmosphere by reducing the distance that the produce needs to be transported. In addition to GHG emission reductions, there is a potential for saving money on groceries, by replacing some of those with the crops grown in a personal garden. We encourage all users to test out the effects of adding gardens to their neighbourhood or residence. Even if you live in an apartment with little room for greenspaces, there might be room on the roof!</p>
+					<br>
+					
+					<p><img src="https://i.imgur.com/uuuFnPil.jpg"  class="cimg" alt="alt text" title="" /></p></li>
+					<br>
+					
+					<li><p><strong>Sustain<em>A</em>ble Transport</strong></p>
+
+					<p>Using alternate forms of transportation that are less harmful to the environment can have a significant impact on the carbon footprint of your community. This section of the app allows you to see your potential savings from switching up your routine for getting to work. Simply select your home and workplace using addresses or pins. Next, input your car mileage in L/100km and select the number of days a week you plan on taking alternate transit. Finally, you can select the 'calculate savings' button which will tell you your GHG emissions offset and cost savings over a week, month, and year based off a round trip.</p></li>
+					<br>
+					
+					<p><img src="https://i.imgur.com/AlqDQgEl.jpg"  class="cimg" alt="alt text" title="" /></p>
+					<br>
+					
+					<li><p><strong>Sustain<em>A</em>ble Housing</strong></p>
+
+					<p>One of the biggest planning issues regarding the development of the built environment that Calgary has to deal with is urban sprawl. This is when the city continues to grow outwards instead of becoming more dense as people move to the city. This section of the app allows you to check if the property you own has one of the possible land use designations to allow for the creation of a secondary suite.  </p>
+					<br>
+					
+					<p><img src="https://i.imgur.com/NfgKrbRl.jpg"  class="cimg" alt="alt text" title="" /></p></li>
+					</ol>
+					<br>
+					<br>
+							
+					
+					<h2 id = "F_ex">Evaluation Criteria</h2>
+					<p>The App focuses on sustainable community development within the City of Calgary and looks at the following criteria and metrics:</p>
+					<br>
+					
+					<ol>
+					<li>Greening the city</li>
+					<li>Connecting the city</li>
+					<li><p>Densifying/compacting the city</p></li>
+					<br>
+					
+					<li><p>Greening the city factors include:</p>
+
+					<ul><li>Greenspace ratios per community (Green<em>Per)
+					<ul><li>Green</em>Per = Natural area in community/total area in community</li></ul></li>
+					<li>Trees per area per community
+					<ul><li>Tree_Densi = # trees in community/total area in community</li></ul></li></ul></li>
+					<br>
+					
+					<li><p>Connecting the city factors include:</p>
+
+					<ul><li>Arterial road lengths intersecting each community
+					<ul><li>Road_Per = Road segments length in community/total area in community</li></ul></li>
+					<li>Bike lane lengths intersecting each community
+					<ul><li>Bike lane segments length in community/total area in community</li></ul></li>
+					<li>Bus route coverage ratio (400m buffer) per community
+					<ul><li>Bus_Per = Area in community within 400m buffer from a bus stop/total area in community</li></ul></li>
+					<li>LRT station coverage ratio (1000m buffer) per community
+					<ul><li>LRT_Per = Area in community within 1000m buffer from an LRT station/total area in community</li></ul></li></ul></li>
+					<br>
+					
+					<li>Densifying/compacting the city factors include:
+					<ul><li>Population density per community
+					<ul><li>Pop<em>Densi = Population in community/total area in community</li></ul></li>
+					<li>Business density per community
+					<ul><li>Busi</em>Densi = # businesses in community/total area in community</li></ul></li></ul></li>
+					<br>
+					</ol>
+
+					<p>All of these metrics are calculated for each community by intersecting each original dataset with the community boundaries in Calgary. For most of the metrics included, we normalized the data based off of the size of each community. This is due to the rankings being generated relative to all the other communities in Calgary. </p>
+
+					<p>Each community gets a ranking # based off of how "sustainable" it is in relation to all other communities in Calgary. The user gets to provide input as to the importance of each of the above factors and the map regenerates according to their ideals</p>
+					<br>
+					<br>
+
+
+
+					<h2 id = "F_ex">Calculations and Processes for using the App</h2>
+					<h4 id = "F_ex">1. Community Sustainability Evaluation</h4>
+					<p>When the application opens, the sustainability ranking for each community is shown using equally weighted evaluation parameters. The user is asked to move slide bars to provide input weights between [0, 10]. These reflect the user’s preferences regarding the importance of each of the following sustainability evaluation criteria.  </p>
+					<br>
+					<ol>
+					<li>Accessible green spaces: Weight = [a0] 
+					<ul><li>Amount of greenspace:  Weight = [a1] 
+					<li>Number of trees: Weight = [a2] 
+					</ul>
+					<br>
+					
+					
+					<li>Sustainable transportation: Weight = [b0] 
+					<ul><li>Driving access: Weight = [b1]  
+					<li>Bikeway access: Weight = [b2] 
+					
+					<li>Bus access: Weight = [b4] 
+					<li>Train (LRT) access: Weight = [b5] 
+					</ul>
+					<br>
+
+
+					<li>Sustainable community growth: Weight = [c0] 
+					<ul><li>Population density: Weight = [c1] 
+					<li>Business access: Weight = [c2] 
+					</ul>
+					<br>
+					
+					</ol>
+
+					<p>[a0], [b0], and [c0] are used to weight the evaluation to the user’s preference on the relative importance of the 3 different criteria of sustainability chosen. If the toggle button for one of these aspects is turned off, the [weight0] = 0 for that criteria. All other weights are used to modify the importance of each evaluation metric used for each criterion.  </p>
+					
+					<p>Once all the weights have been decided upon, the user clicks on the ‘Evaluate Sustainability’ button. This triggers the following processes that calculate user weighted evaluation solutions:  </p>
+					<br>
+					
+					<h6 id = "F_ex"> Accessible green spaces Evaluation: </h6>
+					<p>A = [(a1*Green_Per) + (a2*Tree_Densi)] / (a1+a2)</p>
+					<br>
+					
+					<h6 id = "F_ex"> Sustainable Transportation Evaluation:</h6>
+					<p>B = [(b1*Road_Per) + (b2*Bike_Per) + (b3*Walk_Per) + (b4*Bus_Per) + (b5*LRT_Per)] / (b1+b2+b3+b4+b5)</p>
+					<br>
+					
+					<h6 id = "F_ex"> Sustainable Community Growth Evaluation: </h6>
+					<p>C = [(c1*PopDensi) + (c2*BusiDensi)] / (c1+c2)</p>
+					<br>
+					<br>
+					<h6 id = "F_ex"> Total Community Sustainability Evaluation: </h6>
+					<p>SE = (a0*A) + (b0*B) + (c0*C) / (a0 + b0 + c0)</p>
+					<br>
+					
+					<p>The value of SE is the community sustainability score that is based off the user`s subjective weighting for the different sustainability criteria and evaluation metrics. The community areas are then ranked from highest SE score to lowest SE score. Finally, the community shapefiles will be color coded based off their ranking and the ranking numbers will be displayed on the map under the community names. </p>
+					<br>
+					
+					
+					<h4 id = "F_ex">2. SustainAble Food</h4>
+					<ol>
+					<li>This interactive activity starts by asking the user to input their home address.  
+					<li>Once the address is stored, the map zooms to the extent of their property and a draw polygon tool pops up. The user is asked to draw the extent of a proposed garden on their home property. The area of the proposed garden is then calculated. 
+					<li>The application then asks the user to select what produce they plan to plant in their newly proposed garden. The produce options are available in a drop down menu. Each type of produce has an estimated yield per area (in weight) associated with it. 
+					<li>The estimated weight of produce that will be harvested a year is calculated through the following equation: 
+					<ul>Weight = (Proposed garden area)*(Yield per area) </ul>
+					<li>Using the estimated weight of produce, the amount of GHG emissions reduced by the users proposed garden is calculated. This calculation shows the reduction in emissions for the two scenarios of the produce being imported from BC or California by freight truck.
+					</ol>
+					<br>
+					
+					
+	
+					
+					
+					<h4 id = "F_ex">3. SustainAble Transport</h4>
+					
+					<ol> 
+					<li>This interactive activity starts by asking the user to input their home and work addresses. This can be done by manually typing the addresses in or by dropping 2 pins onto the map. 
+					<li>With this input, the application calculates the shortest driving distance between the user’s home and work.  
+					<li>Next, the user is asked to input their car mileage and the price of gas near their home. 
+					<li>With this input, the application calculates the amount of gas, the cost of gas, and the amount of GHG emissions reduced per day for a 2-way trip making this drive. 
+					<li>Lastly, the user is asked to specify how many days a week they would like to walk or bike to work instead of driving. 
+					<li>The results are displayed for how much gas, money, and GHG emissions the user can save or reduce for the intervals (day, week, month, year). 
+					</ol>
+					<br>
+					
+					<h4 id = "F_ex">4. SustainAble Housing</h4>
+					
+					<ol>
+					<li>This interactive activity starts by asking the user to type in their home address. 
+					<li>Using this address, the land use zoning designation is checked to see if it is a parcel that can establish a secondary suite on the selected property.  
+					<li>The application returns whether the parcel address can apply for a secondary suite and if the approval is permitted or discretionary 
+					<ul><li>Permitted means that only a building permit is needed 
+					<li>Discretionary means that a building permit and a development permit are both needed </ul>
+				
+					</ol>
+					<br>
+					<br>
+					
+					
+					<h2 id = "F_ex">Limitations of the App</h2>
+					<p>Our application was aimed towards citizens living in Calgary or for those thinking about moving to Calgary. For this reason, we only included three sustainability criteria that citizens could directly make changes to (Greening the City, Connecting the City, and Compacting the City).</p>
+					<p>In a later version of the app, we would like to include the other three criteria which are more oriented towards a land developer or city planner (Great communities, Good urban design, and Prosperous economy)</p>
+					<br>
+					<br>
+					
+					<h2 id = "Data">Original Open Datasets Used</h2>
+					
+					<ul>
+					<li><p>Open Calgary Datasets:</p>
+
+					<ul><li><p>Community boundaries in Calgary:</p>
+
+					<ul><li>Community boundaries for the City of Calgary.</li>
+					<li>Found online <a href="https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6">here</a></li></ul></li>
+					<li><p>Natural areas in Calgary:</p>
+
+					<ul><li>Administrative grouping of Habitat polygons into Natural areas maintained by Calgary 
+					Parks or located on lands under Calgary Parks Stewardship.</li>
+					<li>Found online <a href="https://data.calgary.ca/Environment/Natural-Areas/icxc-6yk3">here</a></li></ul></li>
+					<li><p>Parcel addresses in Calgary:</p>
+
+					<ul><li>This file contains address information for land parcels within The City of Calgary.</li>
+					<li>Found online <a href="https://data.calgary.ca/Environment/Natural-Areas/icxc-6yk3">here</a></li></ul></li>
+					<li><p>Public trees in Calgary:</p>
+
+					<ul><li>Information about Calgary's urban forest, including the locations and types of trees on public land.
+					<ul><li>Found online <a href="https://data.calgary.ca/Environment/Public-Trees/tfs4-3wwa">here</a></li></ul></li></ul></li>
+					<li><p>Bikeways in Calgary:</p>
+
+					<ul><li>This data set contains the on-street bikeway network within the City of Calgary.
+					<ul><li>Found online <a href="https://data.calgary.ca/Transportation-Transit/Calgary-Bikeways/yigb-2xmq">here</a></li></ul></li></ul></li>
+					<li><p>Parks pathways in Calgary:</p>
+
+
+
+					<ul><li>Calgary Transit stop locations.</li>
+					<li>Found online <a href="https://data.calgary.ca/Transportation-Transit/Calgary-Transit-Stops/muzh-c9qc">here</a></li></ul></li>
+					<li><p>Transit (LRT) stations in Calgary</p>
+
+					<ul><li>Calgary LRT station locations. </li>
+					<li>Found online <a href="https://data.calgary.ca/Transportation-Transit/Transit-LRT-Stations-map/mg2w-2kv">here</a></li></ul></li>
+					<li><p>Population by community in Calgary (Census by community 2018)</p>
+
+					<ul><li>Census data is an official count of dwelling units and population within those units.</li>
+					<li>Found online <a href="https://data.calgary.ca/Demographics/Census-by-Community-2018/cc4n-ndvs">here</a></li></ul></li>
+					<li><p>Business licenses in Calgary</p>
+
+					<ul><li>This file includes the licensed businesses in the City of Calgary. Data fields include: Trade name, Business Location, Creation Date, Status, Licence Type and Community District of the business.</li>
+					<li>Found online <a href="https://data.calgary.ca/Business-and-Economic-Activity/Calgary-Business-Licences/vdjc-pybd">here</a></li></ul></li></ul></li>
+					<br>
+					<li><p>Canada Open Government Datasets:</p>
+
+					<ul><li>National Road Network – Alberta subset:
+					<ul><li>Includes shapefile of all road segments running through Alberta</li>
+					<li>Found online <a href="https://open.canada.ca/data/en/dataset/05e0bd57-29c7-4d26-9e0f-9021212a9003">here</a></li></ul></li></ul></li>
+					<br>
+					<li><p>Canada Mortgage and Housing Corporation:</p>
+
+					<ul><li>Rent prices per community in Calgary:
+					<ul><li>Includes average rent prices for 1 bedroom, 2 bedroom, and 3 bedroom rentals for each community in Calgary. Multiple sets of data (based on community region in Calgary) were aggregated to form a single table.</li>
+					<li>Found online <a href="https://www03.cmhc-schl.gc.ca/hmip-pimh/en/TableMapChart/#TableMapChart/0140/3/Calgary">here</a></li></ul></li></ul></li>
+					</ul>
+					<br>
+					<br>
+					
+					
+					<h2 id = "Refs">References</h2>
+					<ul>
+					<li><p>Calgary’s 2020 Sustainability Direction: <a href="http://www.calgary.ca/PDA/pd/Documents/municipal-development-plan/2020-sustainability-direction.pdf">Click Here</a></p>
+					<li><p>Calgary’s Municipal Development Plan: <a href="http://publicaccess.calgary.ca/lldm01/livelink.exe?func=LL.Login&NextURL=%2Flldm01%2Flivelink%2Eexe%3Ffunc%3Dccpa%2Egeneral%26msgID%3DOTTKcgyTerX%26msgAction%3DDownload ">Click Here</a></p>
+					<li><p>Expected Yields of Different Types of Produce: <a href="https://webcache.googleusercontent.com/search?q=cache:3tEOKexgpf0J:https://www.kzndard.gov.za/images/Documents/Horticulture/Veg_prod/expected_yields.pdf+&cd=1&hl=en&ct=clnk&gl=ca">Click Here</a></p>
+					<li><p>Canada – Fresh Produce – Imports and Exports Locations: <a href="https://webcache.googleusercontent.com/search?q=cache:xESJeglmNngJ:https://www.pma.com/~/media/pma-files/research-and-development/canada.pdf%3Fla%3Den+&cd=12&hl=en&ct=clnk&gl=ca">Click Here</a></p>
+					<li><p>Gas Prices: <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000101 ">Click Here</a></p>
+					<li><p>Guidelines for Measuring and Managing CO2 Emission from Freight Transport Operations: <a href="https://www.ecta.com/resources/Documents/Best%20Practices%20Guidelines/guideline_for_measuring_and_managing_co2.pdf ">Click Here</a></p>
+					<li><p>Learn the Facts – Fuel Consumption and CO2: <a href="https://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/oee/pdf/transportation/fuel-efficient-technologies/autosmart_factsheet_6_e.pdf ">Click Here</a></p>
+					</ul>
+					<br>
+					<br>
+					
+					
+					<h2>Team Biography - The 4 Mapsketeers</h2>
+					<ul>
+					<li><p><a href="https://www.linkedin.com/in/rodrigo-silva/">Rodrigo Silva</a> is a second year MSc student in the Geomatics Engineering department at University of Calgary. He received his BSc in Computer Engineering from University of Pernambuco, Brazil. His current research is related to personalized route recommendation with the use of collaborative filtering techniques.</p></li>
+					<li><p><a href="https://www.linkedin.com/in/dillon-pullano-75752a10b/">Dillon Pullano</a> is a second year MSc graduate student in Geomatics Engineering at the University of Calgary with a specialization in Land Tenure and GIS. His research topic is related to the development of a 3D cadastre. It focuses on spatial data structures and processes that could be implemented to digitally perform topological analysis between 2D and 3D objects. He completed his BSc degree in Geomatics Engineering from the University of Calgary in 2017. 
+					For more information on Dillon’s research you can visit the University of Calgary’s Land Tenure and Cadastral Systems Research Group <a href="https://www.ucalgary.ca/mikebarry/team">homepage</a></p></li>
+					<li><p><a href="https://www.linkedin.com/in/sandra-simeonova-bb7995b3/">Sandra Simeonova</a> is a first-year MSc student in the Geomatics Engineering department at University of Calgary. She is a Department of Geomatics Alumni. Her research is focused in the area of digital imaging systems, mainly focusing on unmanned aerial vehicles (UAV’s). Prior to her return to higher education in 2011, she worked as a travel agent, were her passion for travel and education evolved. </p></li>
+					<li><a href="https://www.linkedin.com/in/dmjarron/">David Jarron</a> is a second year MSc student in the Department of Geomatics Engineering at the University of Calgary. His specialization is in Mobile mapping systems and image metrology, although he is interested at testing his skills in GIS application development. He completed his BSc in Geomatics engineering at the University of Calgary in 2017 and interned at the City of Calgary working on GIS legal survey data.</li>
+					</ul>
+					<p><img src="https://i.imgur.com/Rj1r0QPl.jpg?1" class="cimg" alt="These dorks, From left to right: Sandra Simeonova, Dillon Pullano, Rodrigo Silva, and David Jarron." title="" /></p></li>
+	
+			</div>
+		</div>
+</body>
+</html>
