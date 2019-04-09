@@ -1,0 +1,45 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": false,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": false,
+    "SetVisibilityRange": false,
+    "EnableOrDisablePopup": true,
+    "ControlLabels": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": false,
+    "DescriptionOrShowItemDetailsOrDownload": false
+  },
+  "layerOptions": {
+    "HRMParkRecreation_9626": {
+      "display": true
+    },
+    "BoundaryLayers_2585": {
+      "display": true
+    },
+    "BoundaryLayers_1083": {
+      "display": true
+    },
+    "CommunityLayers_5006": {
+      "display": true
+    },
+    "CommunityAllLayers_1110": {
+      "display": true
+    },
+    "CommunityAllLayers_821": {
+      "display": true
+    },
+    "BoundaryLayers_9716": {
+      "display": true
+    },
+    "VectorTile_4680": {
+      "display": false
+    },
+    "VectorTile_6966": {
+      "display": false
+    }
+  }
+}

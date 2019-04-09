@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="description" content="Calcite Maps Demo - ArcGIS">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="https://imgur.com/T2UxL6v.png" type="image/png">
+        <title>SustainABLE Halifax</title>
+
+        <!-- Calcite Maps Bootstrap -->
+        <link rel="stylesheet" href="calcite/css/calcite-maps-bootstrap.min-v0.10.css">
+
+        <!-- Calcite Maps -->
+        <link rel="stylesheet" href="calcite/css/calcite-maps-arcgis-3.x.min-v0.10.css">
+
+        <!-- ArcGIS JS 3.x -->
+        <link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/themes/calcite/dijit/calcite.css">
+        <link rel="stylesheet" href="https://js.arcgis.com/3.27/esri/themes/calcite/esri/esri.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Dojo Config -->
+        <script type="text/javascript">
+            var dojoConfig = {
+                packages: [{
+                        name: "bootstrap",
+                        location: location.pathname.replace(/\/[^/]+$/, "") + "/calcite/vendor/dojo-bootstrap"
+                    },
+                    {
+                        name: "calcite-maps",
+                        location: location.pathname.replace(/\/[^/]+$/, "") + "/calcite/js/dojo"
+                    }]
+            };
+        </script>
+
+        <!-- ArcGIS JS 3.x -->
+        <script src="https://js.arcgis.com/3.27/"></script>
+
+        <!-- Custom JS -->
+        <script src="scripts/main.js"></script>
+
+    </head>
+
+    <body class="calcite calcite-maps calcite-nav-top calcite-margin-all calcite-zoom-top-left calcite-layout-inline-left">
+
+        <!-- Navbar -->
+
+        <nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light bg-dark-purple">
+
+            <!-- Title -->
+            <div class="calcite-title calcite-overflow-hidden">
+                <span id="appTitle" class="calcite-title-main">SustainABLE Halifax</span>
+            </div>
+            <!-- Map buttons -->
+            <div class="calcite-nav nav navbar-nav calcite-text-light" id="mapBtns">
+                <button id="sumMapBtn" class="map-button"><img alt="sum" src="images/SummaryG.png" class="imgBtn"/></button>
+                <span id="sumTitle" class="calcite-title-sub hidden-xs mapTitle"
+                      style="display:inline;color:#9CB08D">Summary</span>
+
+                <button id="envMapBtn" class="map-button"><img alt="sum" src="images/EnviroP.png" class="imgBtn"/></button>
+                <span id="envTitle" class="calcite-title-sub hidden-xs mapTitle"
+                      style="display:none;color:#9CB08D">Environmental</span>
+
+                <button id="socMapBtn" class="map-button"><img alt="sum" src="images/SocialP.png" class="imgBtn"/></button>
+                <span id="socTitle" class="calcite-title-sub hidden-xs mapTitle"
+                      style="display:none;color:#9CB08D">Social</span>
+
+                <button id="ecoMapBtn" class="map-button"><img alt="sum" src="images/EconomicP.png" class="imgBtn"/></button>
+                <span id="ecoTitle" class="calcite-title-sub hidden-xs mapTitle"
+                      style="display:none;color:#9CB08D">Economic</span>
+            </div>
+            <!-- Search -->
+            <ul class="calcite-nav nav navbar-nav">
+                <li><div class="calcite-navbar-search hidden-xs"><div id="searchNavDiv"></div></div></li>
+            </ul>
+
+        </nav><!--/.navbar -->
+
+
+
+        <!-- Map Container  -->
+
+        <div class="calcite-map">
+            <div id="mapViewDiv" class="calcite-map-absolute"></div>
+            <span id="logo">
+                <a href="https://www.nscc.ca/explorenscc/campuses/cogs/" target="_blank">
+                    <img id="logoImg" src="https://farm8.staticflickr.com/7807/40269035363_fce9cb8b68_o_d.png">
+                </a>
+            </span>
+            <span id="HomeButton"></span>
+        </div><!-- /.container -->
+
+        <!-- Panel -->
+
+        <div class="calcite-panels calcite-panels-left calcite-bg-light calcite-text-dark panel-group" role="tablist" aria-multiselectable="true">
+
+            <!-- Info Panel -->
+
+            <div id="panelInfo" class="panel collapse in">
+
+                <div id="headingInfo" class="panel-heading">
+                    <div class="panel-title">
+                        <a class="panel-toggle" role="button" data-toggle="collapse" href="#collapseInfo" aria-expanded="true" aria-controls="collapseInfo"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span><span class="panel-label">Info</span></a>
+
+                        <a class="panel-close" role="button" data-toggle="collapse" tabindex="0" href="#panelInfo"><span class="esri-icon esri-icon-close" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+
+                <div id="collapseInfo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingInfo">
+                    <div class="panel-body">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#aboutTab" aria-controls="aboutTab" role="tab" data-toggle="tab" data-dojo-dataid="pid3">About</a></li>
+                            <li role="presentation" class=""><a href="#legendTab" aria-controls="legendTab" role="tab" data-toggle="tab" data-dojo-dataid="pid2">Legend</a></li>
+                            <li role="presentation" class=""><a href="#layersTab" aria-controls="layersTab" role="tab" data-toggle="tab" data-dojo-dataid="pid1">Layers</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <!-- Tab - About -->
+
+                            <div role="tabpanel" class="tab-pane active" id="aboutTab">
+                                <div  id="aboutText"></div>
+                                
+                                <div id="bldgTypeDiv">
+                                    <label id="bldgTypeLbl" style="margin-right:10px">
+                                        Community Resources
+                                    </label>
+                                    <select id="bldgType">
+                                        <option value="0">All</option>
+                                        <option value="Environmental">Environmental</option>
+                                        <option value="Social">Social</option>
+                                        <option value="Economic">Economic</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Tab - Legend -->
+
+                            <div role="tabpanel" class="tab-pane" id="legendTab">
+                                <div class="calcite-form-title"></div>
+                                <div id="legendDiv" data-dojo-id="legendDiv"></div>
+                            </div>
+
+                            <!-- Tab - Layers -->
+
+                            <div role="tabpanel" class="tab-pane" id="layersTab">
+                                <div class="calcite-form-title"></div>
+                                <div id="layerListDiv" data-dojo-id="layerListDiv"></div>
+                            </div>
+
+
+                        </div><!-- /.tab-content -->
+                    </div><!-- /.panel-body -->
+                </div><!-- /.panel-collapse -->
+
+            </div>
+        </div> <!-- /.calcite-panels -->
+
+    </body>
+</html>

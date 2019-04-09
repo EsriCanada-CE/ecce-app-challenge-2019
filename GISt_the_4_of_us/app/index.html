@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Access Toronto</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+    <link href='css/style.css' rel='stylesheet'>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.10/"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <div id='header'>
+        <h1>AccessToronto<small id='small'>Created by <i>GISt the 4 of us</i></small></h1>
+    </div>
+    <div id='content'>
+        <div id='left-column'>
+            <h4 class='text-center'>Find an accessible space</h4>
+            <div id='lg'><img id="logo" src="https://farm8.staticflickr.com/7910/33366274318_9d0367975a_b.jpg" alt="Accessibility App logo" /></div>
+
+            <form id='search-form'>
+                <div class="form-group">
+                    <label>Type of Space</label>
+                    <select class="form-control" name='Public_Space'>
+                        <option></option>
+                        <option value="'Green Space'">Green Space</option>
+                        <option value="'Garden'">Garden</option>
+                        <option value="'Playground'">Playground</option>
+                        <option value="'Library'">Library</option>
+                        <option value="'Recreation Centre'">Recreation Centre</option>
+                        <option value="'Plaza'">Plaza</option>
+                        <option value="'Community Hall'">Community Hall</option>
+                    </select>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Reserved_Parking' value='1'> Reserved Parking
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Service_Animal' value='1'> Service Animal Friendly
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Elevators' value='1'> Elevators
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Automatic_Doors' value='1'> Automatic Doors
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Ramp' value='1'> Ramp
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Single_Washroom' value='1'> Single Stall Washroom
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Gender_Neutral_Washroom' value='1'> Gender Neutral Washroom
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Female_Washroom' value='1'> Female Washroom
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name='Male_Washroom' value='1'> Male Washroom
+                    </label>
+                </div>
+                <div class='form-group'>
+                    <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        More Options
+                    </a>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Braille_Signs' value='1'> Braille Signs
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Auditory_Signals' value='1'> Auditory Signals
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='ASL_Friendly' value='1'> ASL Friendly
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Fragrance_Free' value='1'> Fragrance Free
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Water' value='1'> Water Fountain
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Seating' value='1'> Seating
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name='Shelter' value='1'> Shelter
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Lighting Intensity</label>
+                        <select class="form-control" name='Lighting'>
+                            <option value="">Choose an option</option>
+                            <option value="'Low'">Low</option>
+                            <option value="'Medium'">Medium</option>
+                            <option value="'High'">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Noise Level</label>
+                        <select class="form-control" name='Noise_Level'>
+                            <option value="">Choose an option</option>
+                            <option value="'Low'">Low</option>
+                            <option value="'Medium'">Medium</option>
+                            <option value="'High'">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Pathway</label>
+                        <select class="form-control" name='Pathway'>
+                            <option value="">Choose an option</option>
+                            <option value="'Paved'">Paved</option>
+                            <option value="'Gravel'">Gravel</option>
+                            <option value="'Grass'">Grass</option>
+                            <option value="'Bare'">Bare</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Slope Level</label>
+                        <select class="form-control" name='Slope'>
+                            <option value="">Choose an option</option>
+                            <option value="'Flat'">Low</option>
+                            <option value="'Moderate'">Medium</option>
+                            <option value="'Steep'">High</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Search Near Me
+                    </label>
+                </div> -->
+                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="button" class="btn btn-link" id='reset-form'>Clear</button>
+            </form>
+            <hr />
+            <p>
+                <div id="entry-h">To create a new entry:</div>
+                1. Click 'Create New Space'<br>
+                2. Choose a point on the map<br>
+                3. Input information<br>
+                4. Click Submit
+            </p>
+
+            <div id='createplace'><button class='btn btn-info' id='create-place-toggle'>Create New Space</button></div>
+            <!-- <div id='create-place-toggle' title='Create new place'>
+                <div><i class='fa fa-plus'></i></div>
+            </div>-->
+        </div>
+        <div id='map-container'>
+            <div id="viewDiv"></div>
+        </div>
+    </div>
+
+
+    <!-- CREATE FORM -->
+    <div class="modal fade" id='form-modal' tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id='create-form'>
+                    <input type='hidden' id='latitude-input' name='latitude' />
+                    <input type='hidden' id='longitude-input' name='longitude' />
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Create new accessible location</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>
+                                *Name of Public Space:
+                            </label> <input required class="form-control" type="text" name='Name'>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Address:
+                            </label><input class="form-control" type="text" name='Address'>
+                        </div>
+                        <div class="form-group">
+                            <label>*Type of Space</label>
+                            <select class="form-control" name='Public_Space'>
+                                <option value=''></option>
+                                <option value="Green Space">Green Space</option>
+                                <option value="Garden">Garden</option>
+                                <option value="Playground">Playground</option>
+                                <option value="Library">Library</option>
+                                <option value="Recreation Centre">Recreation Centre</option>
+                                <option value="Plaza">Plaza</option>
+                                <option value="Community Hall">Community Hall</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Reserved_Parking' value='1'> Reserved Parking
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Service_Animal' value='1'> Service Animal Friendly
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Elevators' value='1'> Elevators
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Automatic_Doors' value='1'> Automatic Doors
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Ramp' value='1'> Ramp
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Single_Washroom' value='1'> Single Stall Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Gender_Neutral_Washroom' value='1'> Gender Neutral
+                                Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Female_Washroom' value='1'> Female Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Male_Washroom' value='1'> Male Washroom
+                            </label>
+                        </div>
+                        <div class='form-group'>
+                            <a role="button" data-toggle="collapse" href="#createCollapseOptions" aria-expanded="false"
+                                aria-controls="createCollapseOptions">
+                                More Options
+                            </a>
+                        </div>
+                        <div class="collapse" id="createCollapseOptions">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Braille_Signs' value='1'> Braille Signs
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Auditory_Signals' value='1'> Auditory Signals
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='ASL_Friendly' value='1'> ASL Friendly
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Fragrance_Free' value='1'> Fragrance Free
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Water' value='1'> Water Fountain
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Seating' value='1'> Seating
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Shelter' value='1'> Shelter
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>Lighting Intensity</label>
+                                <select class="form-control" name='Lighting'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Noise Level</label>
+                                <select class="form-control" name='Noise_Level'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pathway</label>
+                                <select class="form-control" name='Pathway'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Paved">Paved</option>
+                                    <option value="Gravel">Gravel</option>
+                                    <option value="Grass">Grass</option>
+                                    <option value="Bare">Bare</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Slope Level</label>
+                                <select class="form-control" name='Slope'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Flat">Flat</option>
+                                    <option value="Moderate">Moderate</option>
+                                    <option value="Steep">Steep</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <small style='float: left'>*required fields</small>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDIT FORM -->
+    <div class="modal fade" id='edit-form-modal' tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id='edit-form'>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Edit Location</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>
+                                *Name of Public Space:
+                            </label> <input required class="form-control" type="text" name='Name'>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Address:
+                            </label><input class="form-control" type="text" name='Address'>
+                        </div>
+                        <div class="form-group">
+                            <label>*Type of Space</label>
+                            <select class="form-control" name='Public_Space'>
+                                <option></option>
+                                <option value="Green Space">Green Space</option>
+                                <option value="Garden">Garden</option>
+                                <option value="Playground">Playground</option>
+                                <option value="Library">Library</option>
+                                <option value="Recreation Centre">Recreation Centre</option>
+                                <option value="Plaza">Plaza</option>
+                                <option value="Community Hall">Community Hall</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Reserved_Parking' value='1'> Reserved Parking
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Service_Animal' value='1'> Service Animal Friendly
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Elevators' value='1'> Elevators
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Automatic_Doors' value='1'> Automatic Doors
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Ramp' value='1'> Ramp
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Single_Washroom' value='1'> Single Stall Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Gender_Neutral_Washroom' value='1'> Gender Neutral
+                                Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Female_Washroom' value='1'> Female Washroom
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name='Male_Washroom' value='1'> Male Washroom
+                            </label>
+                        </div>
+
+                        <div class='form-group'>
+                            <a role="button" data-toggle="collapse" href="#editCollapseOptions" aria-expanded="false"
+                                aria-controls="editCollapseOptions">
+                                More Options
+                            </a>
+                        </div>
+                        <div class="collapse" id="editCollapseOptions">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Braille_Signs' value='1'> Braille Signs
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Auditory_Signals' value='1'> Auditory Signals
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='ASL_Friendly' value='1'> ASL Friendly
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Fragrance_Free' value='1'> Fragrance Free
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Water' value='1'> Water Fountain
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Seating' value='1'> Seating
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name='Shelter' value='1'> Shelter
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>Lighting Intensity</label>
+                                <select class="form-control" name='Lighting'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Noise Level</label>
+                                <select class="form-control" name='Noise_Level'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pathway</label>
+                                <select class="form-control" name='Pathway'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Paved">Paved</option>
+                                    <option value="Gravel">Gravel</option>
+                                    <option value="Grass">Grass</option>
+                                    <option value="Bare">Bare</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Slope Level</label>
+                                <select class="form-control" name='Slope'>
+                                    <option value="">Choose an option</option>
+                                    <option value="Flat">Flat</option>
+                                    <option value="Moderate">Moderate</option>
+                                    <option value="Steep">Steep</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <small style='float: left'>*required fields</small>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

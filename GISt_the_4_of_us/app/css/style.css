@@ -1,0 +1,94 @@
+html,
+body,
+#viewDiv, #map-container, #content {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    height: 60px;
+    width: 100%;
+    background-color: #a0dbdb;
+    color: #232323;
+    padding: 10px;
+    position: absolute;
+}
+
+#header h1 {
+    margin-top: 0;
+}
+
+#content{
+    padding-top: 60px;
+}
+
+#map-container {
+    padding-left: 300px;
+}
+
+#viewDiv{
+    background-color: lightgrey;
+    border: 1px solid lightgray;
+}
+
+#left-column {
+    width: 300px;
+    float: left;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#advanced-options {
+    display: none;
+}
+
+#create-place-toggle{
+    background-color: #2c757f;
+    color: white;
+}
+
+#create-place-toggle div{
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+#logo {
+    width: 150px;
+    margin: auto 0;
+    height: auto;
+    text-align: center;
+ }
+ 
+ #lg {
+     text-align: center;
+ }
+ 
+ #createplace {
+     padding-bottom: 20px;
+ }
+ 
+ .btn.btn-primary {
+     background-color: #2c757f !important;
+ }
+ 
+ .btn.btn-link {
+     color: #701C41 !important;
+ }
+ 
+ #entry-h {
+     padding-bottom: 5px;
+     text-decoration: underline;
+ }
+ #small {
+     font-size: 14px;
+     float: right;
+     padding-top: 15px;
+ }

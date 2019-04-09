@@ -1,0 +1,93 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Layer List styles */
+ul.esriList {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+div.esriToggleButton {
+    display: none;
+}
+input.esriCheckbox {
+    margin-right: 7px;
+}
+
+/* Don't let user close the info panel */
+a.panel-close {
+    display: none;
+}
+
+/* Button styles */
+.map-button {
+  padding: 1px;
+  background-color: #644356;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+/*
+.map-button:hover:enabled {
+    box-shadow: 0 0 15px #DEE0EF;
+}*/
+.imgBtn:hover {
+    box-shadow: 0 0 15px #DEE0EF;
+}
+.mapTitle {
+    margin-top: 17px;
+    margin-right: 15px;
+    color: #9CB08D;
+}
+.imgBtn {
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.bg-dark-purple {
+    background-color: #644356;
+}
+
+#appTitle {
+    margin-left: 20px;
+}
+
+#HomeButton {
+      position: absolute;
+      top: 90px;
+      right: 15px;
+      z-index: 50;
+}
+
+#logo{
+  position:absolute;
+  right:5px;
+  bottom:25px;
+  color:#000;
+  z-index:50;
+}
+
+/* Popups
+ * Reference: https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=fl_popup */
+.esriPopup.purpleGreen .titlePane,
+.dj_ie7 .esriPopup.purpleGreen .titlePane .title {
+    background-color: #A78FA9;
+    color: #644356;
+    font-weight: bold;
+}
+.esriPopup.purpleGreen .titlePane {
+    border-bottom: 1px solid #644356;
+}
+.esriPopup.purpleGreen a {
+    color: #9CB08D;
+}
+.esriPopup.purpleGreen .contentPane,
+.esriPopup.purpleGreen .actionsPane {
+    background-color: #DEE0EF;
+    color: #51655A;
+}

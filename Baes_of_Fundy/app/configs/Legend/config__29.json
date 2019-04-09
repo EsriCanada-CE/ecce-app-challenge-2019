@@ -1,0 +1,50 @@
+{
+  "legend": {
+    "arrangement": 0,
+    "autoUpdate": true,
+    "respectCurrentMapScale": true
+  },
+  "layerState": {
+    "HRMParkRecreation_9626": {
+      "selected": true
+    },
+    "OurdoorRecreationAreas_232": {
+      "selected": true
+    },
+    "BoundaryLayers_2585": {
+      "selected": true
+    },
+    "BoundaryLayers_967": {
+      "selected": false
+    },
+    "BoundaryLayers_1083": {
+      "selected": true
+    },
+    "CommunityLayers_5006": {
+      "selected": true
+    },
+    "CommunityLayers_658": {
+      "selected": true
+    },
+    "CommunityLayers_2376": {
+      "selected": true
+    },
+    "CommunityLayers_7663": {
+      "selected": true
+    },
+    "BoundaryLayers_9716": {
+      "selected": true
+    },
+    "VectorTile_2576": {
+      "selected": false
+    },
+    "VectorTile_4680": {
+      "selected": false
+    },
+    "VectorTile_6966": {
+      "selected": false
+    }
+  },
+  "syncWithWebmap": false,
+  "showLegendForBasemap": false
+}

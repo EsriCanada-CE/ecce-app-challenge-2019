@@ -1,0 +1,12 @@
+Liam's bio:
+My name is Liam Gowan, and I am currently a student at the Centre of Geographic Sciences - NSCC, Lawrencetown, Nova Scotia. Here, I am enrolled in the GIS concentration within the Advanced Diploma in Geographic Sciences. In 2018, I graduated from Dalhousie University with a Bachelor of Computer Science with a specialization in communications technology and cyber security. I enjoy web programming, online mapping applications, drones, cycling, kayaking, and making homemade wine. For more information, please go to www.liamgowan.ca.
+
+Dani's bio:
+My name is Dani Kogan and I am a student at the Centre of Geographic Sciences (NSCC), Lawrencetown, Nova Scotia. I am currently enrolled in the Advanced Diploma in Geospatial Data Analytics Program, where I learn about data mining, spatial analysis, location analysis and machine learning. I graduated from Dalhousie University in 2018 with bachelor’s degree in Psychology and a minor in Biology. In my free time I enjoy working out, swimming, watching movies, and hanging out with friends.
+
+Kaleb's bio:
+My name is Kaleb McNeil and I am a student at the Centre of Geographic Sciences (COGS) in Lawrencetown, NS. I am enrolled in the Advance Diploma in Geographic Science program with a concentration is GIS. I love spatial relationships and applying GIS technologies to improve public understanding of complex social issues. I graduated from Memorial University with a BA (2016) and a MSc (2018) in Geography.
+
+Andrea's bio:
+My name is Andrea Zagar, and I’m a student in the Advanced GIS Diploma program at the Centre of Geographic Sciences (COGS) in Lawrencetown, Nova Scotia. I graduated from Western University in 2017 with an undergraduate degree in Software Engineering. 
+To me, GIS is an exciting combination of geography, programming, and data analysis that provides a unique perspective of the world around us. When I’m not working on maps, you can find me reading, cooking, stargazing or exploring the outdoors.

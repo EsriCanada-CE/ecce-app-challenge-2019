@@ -1,0 +1,264 @@
+{
+  "hideLayersAfterWidgetClosed": true,
+  "labelTasks": "Options",
+  "labelResults": "Results",
+  "showFilterLabel": false,
+  "criteiraLabel": "Query criteria",
+  "spatialFilterLabel": "Spatial filters",
+  "queries": [
+    {
+      "url": "https://services9.arcgis.com/vFYngfYgyeXmwhNK/arcgis/rest/services/CommunityAllLayers/FeatureServer/3",
+      "name": "Areas Meeting Green Space Standards",
+      "icon": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Cartographic/esriCartographyMarker_78_Green.png",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAAYagMeiWXwAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAPXSURBVHhe7VtLSJRRFPaRpk3m1JSWWoOmVkymaDVkZWqJxpRTWg0WvZCKqBCkByVUMPQWhp4UA0UQCEEERRS4aNGiRYsWLVq0aNGiRYsWLVq0KL7F/Zln/73/f+/MPfMrDMLMueee891zzz3n3HPz8qb+1CLgKiv2rOmp3b917/ILoaOtkZPj3W/xufqk/2t0cugvPufv931k34MOn9b1CwenFRVMVyudIu5zKmZ4u/objo1e65pkSlr9fyLc8RK8wFORuPLY+ru9ey5GN3+yqqzZuPDDwGfMIU9iSZya/FUBlYonAoO5MKck8a2zqffNXXs6sumd2cqp+h1+o3apx29dA4sj8wvyC4eOt91WpZgoXzhXi6qIDyt1FZWPXO58LSqkanrIBNnENRIYMW/BzMWZ3OuioF16vOVLZU3ZEgGV+Emx3yPPBn6ICpVp+pvPB3/6Vs7v5deMgxLK33u163emlbE634M3oT/SQEAAQmHlE8G682LnL9vbobik0KXznjezEPgEhOIcRp6aBGGo2SS6/444xVJOseNwyw3dleOV7+Ap/yMhK/A2zG7jZU6FrnFFxQZuEBBiUlGMV86zt3recwGA44OXKTW6lvbqoCkIKE5QU4xXXqTTyGPSgoBcm5cZVTpUp9ICkMurzxYMOqYEABEf1VUVldvtKa1OAgF1N1FGVOk7AvVHkgCQUcCkAghqB3EAoJCADIqKAnblhK7IcwwQVnUuCtllSm087h0MAAaGm69QU8CuvH2hZWcMAPaNro7aZUhtfFwhVccip2pAD51rnzAsYOxu7wfVE+rGH6eeAcD1ieA33QRULQ/yAgMAJx2BDFjUOacAYAiMP932XbXJ6cY/bgs43gk6/hhE1VQ3E1UtT1wg5PhQGPmxasR14x+XDM1yl1TqJqBKeZLSYRyHTqgHMlCTCiIAIHigKawSdZ14o/yXVBJDs5FOQqqUJWVRFBcGTogI05bFYRJoUVWJvA68/3sxguIoxW4QXmBNr8ZgBRu3N47wMqRGx3U5im6K2E5uakqmk5f7ehxWgH2SK4ozPYQaJHAi5FKThHCLDKwA3VW5sBUsN0kBhJo6dzP67ahuByygrTY5gADPSREAKY2SLF6mFiBJbZVlIAR2+8YoWIKSZmkGAooIOvsEtMZWect9KVtgZH0Jx6jjTVJGHkwwEOFZdSql4/mOrAUW4rOur244myk0zvisPJqKRQm5A5oN4Hwy5SS1eTYXCwRSaZTXVabT2j6cTNw36DYHGDIeW5B6OpvKgaD+hnsHBFNwVuyRdOxJknOPp4U8aZaJ/wFHs4gKGMifRgAAAABJRU5ErkJggg==",
+        "contentType": "image/png",
+        "width": 18.75,
+        "height": 18.75
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "PLAN_NAME",
+              "label": "PLAN_NAME",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "selectUI": "dropdown",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "Bedford",
+                  "alias": "Bedford",
+                  "isChecked": false
+                },
+                {
+                  "value": "Dartmouth",
+                  "alias": "Dartmouth",
+                  "isChecked": false
+                },
+                {
+                  "value": "Downtown Dartmouth",
+                  "alias": "Downtown Dartmouth",
+                  "isChecked": false
+                },
+                {
+                  "value": "Downtown Halifax",
+                  "alias": "Downtown Halifax",
+                  "isChecked": false
+                },
+                {
+                  "value": "Eastern Passage/Cow Bay",
+                  "alias": "Eastern Passage/Cow Bay",
+                  "isChecked": false
+                },
+                {
+                  "value": "Halifax",
+                  "alias": "Halifax",
+                  "isChecked": false
+                },
+                {
+                  "value": "Sackville",
+                  "alias": "Sackville",
+                  "isChecked": false
+                },
+                {
+                  "value": "Sackville Drive",
+                  "alias": "Sackville Drive",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "All Communities",
+              "enableEmpty": true
+            },
+            "interactiveObj": {
+              "prompt": "Community Name is",
+              "hint": "",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "1=1",
+        "displaySQL": "1=1"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [
+        "PLAN_NAME ASC"
+      ],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          72,
+          193,
+          56,
+          64
+        ],
+        "outline": {
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "width": 0,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "CommunityAllLayers_1110"
+    },
+    {
+      "url": "",
+      "name": "Areas Not Meeting Green Space Standards",
+      "icon": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Cartographic/esriCartographyMarker_78_Red.png",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAAYagMeiWXwAAAAlwSFlzAAAOwwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAPSSURBVHhe7Vs/aJNBFA9JY1Nj08Zoo0lrUmsT29S21D9NTZuQNjQ1bWihg4hCh4IiCp1EQdDBoaCIQkEQhYIgCoIgCgVFFBwcHBwcHBwcHBwcHBwcHJTfcB/563f3fXfJXb4WQiF59+6937179967dzbb5p9YBDxOpy/b1bm0FI1cPX8gduv2+NgbfB5PT319u5D/i8/9dPIj+R50+CQDuxeddnuzWOkEcfe3tIQWusPnbh6NvyJKGv2/Gj/yHLzAU5C4/NhmOoMn1ydTn4wqqzfuwVT6M+bgJzEnTnF/x6xIxUuBwVyYk5P4xtkMbPcm1iYS7/RWTtTv8Bt93vZR4xoYHGm32RwrgwNrohRj5QvnalAV9mHupqa262OjG6xCiqaHTJCNXSOGEQH31p5a7nVW0B5mJr90bXNHGVSiJ8V+f5bL/mAVqtb0L2Znfh7u2Jml14yCEsq/zOd+11oZo/O9np/7ww0EBCAqrHwpWBtzx36Z3g4uh8Mt857XsxD4BITiFEZemQRhqN4ksv+OOMVQTnE21n9DduVo5bs0MrzOZAWR9raDtMxVoRvy+VLUICDEVEUxWjnvJMffUwGA44OWqWp0iV3+eV0QUJxQTTFaeZFOI4+pCgJybVpmqtKhOlUVgEZefbJg0LEiAIj4VF1VVrl3uFzBMhBQd2NlpCp9Phw6UwYAjwKmKoCgdlAEAAoJyKBUUcCsnNAVeY4GQjoYOG6WqWrjce+gAXC6f/+qagqYlfdE776LGgAXhgfvmWWo2viiQqqMRU7RgF45NPJIs4C7qYkPoieUjT9OPQ2AJ9nMN9kEFC0P8gINACsdgQRY1Dk3ASAIPJ2Z/i7a5GTjX7QFLO8ELX8Momoqm4mKlqcoELJ8KIz8WDTisvEvSoa8zVv8sgkoUp6ydBjHoRXqgQTUsoIIAFjui14TibpMvFH+KyuJodlIJiFFylKxKIoLAytEhFXL4jAJtKiKRF4G3v+9GEFxVMVuEFpgda/GYAWLe7tXaBmqRkd1OYpuisJObtWUrCYv9fU4rAD7pFEUJ3owNUjgRGikJgnmFhlYAbqrGmErGG6SAgg9Hs8Q+u1U3Q5YQFNtcgABnlNFALg0SpJ4WbUAiWurLAHhVKT3sgqWIKRZmoCAIoLMPgGtseHW1ljFFhheX8IxyniTVJMHEwREeFaZSul4vsNrgZn45EJ7luuZQuOMr8ujqUKUkDug2QDOp1ZOUppnc4VAIJVGeV1kOi3tw8nSfYNuc4DB47GFUk9nKzkQ1N9w74BgCs6KPJIuPEka7vE0kyetM/E/onLC6+8Ah4wAAAAASUVORK5CYII=",
+        "contentType": "image/png",
+        "width": 18.75,
+        "height": 18.75
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "PLAN_NAME",
+              "label": "PLAN_NAME",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "selectUI": "dropdown",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "Bedford",
+                  "alias": "Bedford",
+                  "isChecked": false
+                },
+                {
+                  "value": "Dartmouth",
+                  "alias": "Dartmouth",
+                  "isChecked": false
+                },
+                {
+                  "value": "Downtown Dartmouth",
+                  "alias": "Downtown Dartmouth",
+                  "isChecked": false
+                },
+                {
+                  "value": "Downtown Halifax",
+                  "alias": "Downtown Halifax",
+                  "isChecked": false
+                },
+                {
+                  "value": "Eastern Passage/Cow Bay",
+                  "alias": "Eastern Passage/Cow Bay",
+                  "isChecked": false
+                },
+                {
+                  "value": "Halifax",
+                  "alias": "Halifax",
+                  "isChecked": false
+                },
+                {
+                  "value": "Sackville",
+                  "alias": "Sackville",
+                  "isChecked": false
+                },
+                {
+                  "value": "Sackville Drive",
+                  "alias": "Sackville Drive",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "All Communities",
+              "enableEmpty": true
+            },
+            "interactiveObj": {
+              "prompt": "Community Name is",
+              "hint": "",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "1=1",
+        "displaySQL": "1=1"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [
+        "PLAN_NAME ASC"
+      ],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          168,
+          0,
+          0,
+          128
+        ],
+        "outline": {
+          "color": [
+            232,
+            48,
+            48,
+            255
+          ],
+          "width": 0,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "CommunityAllLayers_821"
+    }
+  ]
+}

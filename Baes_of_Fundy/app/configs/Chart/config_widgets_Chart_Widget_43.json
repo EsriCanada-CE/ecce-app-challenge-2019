@@ -1,0 +1,172 @@
+{
+  "charts": [
+    {
+      "url": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1"
+      },
+      "description": "Displayed by Community",
+      "symbol": {
+        "color": [
+          221,
+          221,
+          221,
+          0
+        ],
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "width": 0,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "webMapLayerId": "BoundaryLayers_9716",
+      "mode": "category",
+      "name": "Community Areas Meeting Green Space Standards",
+      "highLightColor": "#b94141",
+      "types": [
+        {
+          "type": "column",
+          "display": {
+            "colors": [
+              "#228b22"
+            ],
+            "showHorizontalAxis": true,
+            "showVerticalAxis": true,
+            "showLegend": false
+          }
+        }
+      ],
+      "categoryField": "PLAN_NAME",
+      "operation": "sum",
+      "valueFields": [
+        "PercentGreenSpace"
+      ],
+      "sortOrder": {
+        "isLabelAxis": true,
+        "isAsc": true
+      }
+    },
+    {
+      "url": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1",
+        "displaySQL": "1=1"
+      },
+      "description": "Using Custom Metric ",
+      "symbol": {
+        "color": [
+          155,
+          187,
+          89,
+          0
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 0,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "webMapLayerId": "BoundaryLayers_9716",
+      "mode": "feature",
+      "name": "Community Green Space Index",
+      "highLightColor": "#b94141",
+      "types": [
+        {
+          "type": "column",
+          "display": {
+            "colors": [
+              "#2f4f4f"
+            ],
+            "showHorizontalAxis": true,
+            "showVerticalAxis": true,
+            "showLegend": false
+          }
+        }
+      ],
+      "labelField": "PLAN_NAME",
+      "valueFields": [
+        "Score"
+      ],
+      "sortOrder": {
+        "isLabelAxis": false,
+        "isAsc": true
+      }
+    },
+    {
+      "url": "",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [],
+        "expr": "1=1",
+        "displaySQL": "1=1"
+      },
+      "description": "",
+      "symbol": {
+        "color": [
+          155,
+          187,
+          89,
+          0
+        ],
+        "outline": {
+          "color": [
+            115,
+            140,
+            61,
+            255
+          ],
+          "width": 0,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        },
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "webMapLayerId": "BoundaryLayers_9716",
+      "mode": "feature",
+      "name": "Total Green Space Per Community (Hectares)",
+      "highLightColor": "#b94141",
+      "types": [
+        {
+          "type": "column",
+          "display": {
+            "colors": [
+              "#5d9cd3"
+            ],
+            "showHorizontalAxis": true,
+            "showVerticalAxis": true,
+            "showLegend": false
+          }
+        }
+      ],
+      "labelField": "PLAN_NAME",
+      "valueFields": [
+        "TotalArea_Parks"
+      ],
+      "sortOrder": {
+        "isLabelAxis": false,
+        "isAsc": true
+      }
+    }
+  ]
+}
