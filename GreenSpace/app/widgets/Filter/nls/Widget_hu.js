@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/Filter/nls/strings":{_widgetLabel:"Sz\u0171r\u0151",toggleTip:"Kattintson a sz\u0171r\u0151be\u00e1ll\u00edt\u00e1sok megjelen\u00edt\u00e9s\u00e9hez/elrejt\u00e9s\u00e9hez",createCustomFilter:"Egy\u00e9ni sz\u0171r\u0151 l\u00e9trehoz\u00e1sa",customFilter:"Egy\u00e9ni sz\u0171r\u0151",toggleCustomFilters:"\u00d6sszes sz\u0171r\u0151 be- vagy kikapcsol\u00e1sa",_localized:{}}});

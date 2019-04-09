@@ -1,0 +1,7 @@
+**Team Bios: FindingGreen**
+
+**Jamie Leigh Smyth:** Currently a first year Master of Resource and Environmental Management candidate at Dalhousie University with background in Physical Geography and Geomatics. My past experiences and education have made me passionate about using spatial analysis in conservation system planning through active land and seascapes. I find excitement in analyzing data sets for constructing digital maps through GIS technologies to help decision-makers respond quickly to new information
+
+**Lama Farhat:** Currently a 4th year Environmental Science student at Dalhousie University. I am passionate about environmental justice issues, particularly those occurring in the middle east. I&#39;ve spent the last few months working at the GIS centre assisting students and faculty, and I&#39;m currently completing a research project on Wildfire Management using GIS. In my free time, I organize and manage events and workshops for international students on campus
+
+**Caitlin Cunningham:** Caitlin is a PhD candidate at Dalhousie University who loves conservation biology, ethics and maps and is currently trying to build a thesis around all three. Initially she got into GIS because someone offered her free pizza. 10 years later and she&#39;s still at it, using GIS in both educational and professional settings, though she still won&#39;t say no to free pizza.

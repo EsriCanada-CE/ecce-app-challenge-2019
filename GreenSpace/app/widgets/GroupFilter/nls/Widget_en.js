@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/GroupFilter/nls/strings":{_widgetLabel:"Group Filter",label1:"Group filtering widget",labels:{selectGroup:"Select a Group to Filter",criteriaHeading:"Filter Criteria",uploadHeading:"Upload a Saved File",saveHeading:"Save Current Settings",layerOptionHeading:"Filter Options",AppendDefHeading:"Append to Existing Definitions Using",PersistDefHeading:"Persist After Widget is Closed",RefreshValueList:"Refresh the values in drop down list",RefreshHeading:"Refresh Data"},buttons:{save:"Save",
+addCriteria:"Add Criteria",applyCriteria:"Apply",removeCriteria:"Reset"},inputs:{optionOR:"OR",optionAND:"AND",optionEQUAL:"EQUALS",optionNOTEQUAL:"NOT EQUAL",optionGREATERTHAN:"GREATER THAN",optionGREATERTHANEQUAL:"GREATER THAN OR EQUAL",optionLESSTHAN:"LESS THAN",optionLESSTHANEQUAL:"LESS THAN OR EQUAL",optionSTART:"BEGINS WITH",optionEND:"ENDS WITH",optionLIKE:"CONTAINS",optionNOTLIKE:"DOES NOT CONTAIN",optionONORBEFORE:"IS ON OR BEFORE",optionONORAFTER:"IS ON OR AFTER",textboxNumber:"Between ${0} and ${1}",
+textboxText:"Type in a Value"},files:{jsonFile:"MapFilterSettings"},_localized:{}}});
