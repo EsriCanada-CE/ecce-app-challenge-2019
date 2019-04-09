@@ -1,0 +1,186 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "height": 80.13937282229965,
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "id": "8952439047951815-2",
+                "type": "component",
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8952439047951815-2"
+                },
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "jimu grid"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "height": 19.86062717770035,
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "8952439047951815-3"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "8952439047951815-3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "8952439047951815-1",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#fff"
+        },
+        "text": "TITLE OF THE INFOGRAPHIC"
+      }
+    },
+    {
+      "id": "8952439047951815-2",
+      "type": "gauge",
+      "visible": true,
+      "config": {
+        "shape": "curved",
+        "min": 0,
+        "max": 100,
+        "indicators": [
+          {
+            "value": [
+              50
+            ],
+            "operator": "smaller",
+            "isRatio": true,
+            "valueColor": "#ff0000",
+            "uniqueID": "6466455348849176"
+          },
+          {
+            "value": [
+              50,
+              100
+            ],
+            "operator": "between",
+            "isRatio": false,
+            "valueColor": "#ffff00",
+            "uniqueID": "6415483461305109"
+          }
+        ],
+        "statistic": {
+          "type": "FeatureStatistics",
+          "fieldName": "WaterPer",
+          "statisticsType": "sum"
+        },
+        "display": {
+          "backgroundColor": "#222222",
+          "gaugeColor": "#12ddf9",
+          "bgColor": "#1e5f6f",
+          "dataLabels": {
+            "state": false,
+            "textColor": "#ffffff",
+            "dataRange": true,
+            "targetValue": true
+          },
+          "currentValue": {
+            "state": true,
+            "isRatio": true,
+            "font": {
+              "font": {
+                "fontFamily": "Arial",
+                "bold": false,
+                "italic": false,
+                "underline": false
+              },
+              "fontSize": 33,
+              "textColor": "#59bad8"
+            },
+            "dataFormat": {
+              "unit": "percentage",
+              "decimalPlaces": 2,
+              "prefix": "",
+              "suffix": ""
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "8952439047951815-3",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "top"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": "16",
+          "textColor": "#fff"
+        },
+        "text": "The percentage of annual water consumption which could be sourced from a rainwater harvesting system"
+      }
+    }
+  ],
+  "name": "gauge",
+  "wid": "8952439047951815",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Run Off per building",
+    "layerId": "Run_Off_per_building_7838",
+    "useSelection": true,
+    "filterByExtent": true
+  }
+}

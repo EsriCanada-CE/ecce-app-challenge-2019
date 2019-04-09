@@ -1,0 +1,15 @@
+{
+  "selectionColor": "#00FFFF",
+  "selectionMode": "partial",
+  "allowExport": false,
+  "includeRuntimeLayers": false,
+  "geometryTypes": [
+    "POINT",
+    "POLYGON"
+  ],
+  "layerState": {
+    "Run_Off_per_building_7838": {
+      "selected": true
+    }
+  }
+}

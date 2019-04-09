@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/declare","dojo/_base/lang","dojo/Deferred","jimu/dijit/LayerChooserFromMap"],function(f,b,g,c){return f([c],{parent:null,row:null,constructor:function(a){b.mixin(this,a)},postMixInProperties:function(){this.inherited(arguments);this.filter=b.hitch(this,c.andCombineFilters([this.filter,b.hitch(this,this._customFilter)]))},_customFilter:function(a){var c=["WMSLayer","ArcGISImageServiceLayer","ArcGISImageServiceVectorLayer","ArcGISTiledMapServiceLayer","ClusterLayer"],d=new g;if(a.isTable)d.resolve(!1);
+else{var e=!0;this.parent&&this.parent.used_layers&&a.getLayerType().then(b.hitch(this,function(b){-1<c.indexOf(b)?e=!1:this.row.layerID!==a.id&&(e=-1===this.parent.used_layers.indexOf(a.id)&&-1===this.parent.unsupported_ids.indexOf(a.id));d.resolve(e)}))}return d}})});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Estil de comentaris de dist\u00e0ncia i direcci\u00f3",showTabLabel:"Mostra la pestanya",feedbackShapeLabel:"Forma dels comentaris",lineColorLabel:"Color de l\u00ednia",lineWidthLabel:"Amplada de l\u00ednia",feedbackLabel:"Etiqueta de comentaris",textColorLabel:"Color de text",textSizeLabel:"Mida de text",tabErrorMessage:"El widget ha d'estar configurat com a m\u00ednim amb una de les pestanyes que es mostren",lineLabel:"L\u00ednia",
+circleLabel:"Cercle",ellipseLabel:"El\u00b7lipse",ringsLabel:"Anells",transparency:"Transpar\u00e8ncia",_localized:{}}});

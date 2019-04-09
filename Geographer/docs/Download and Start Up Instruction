@@ -1,0 +1,9 @@
+Download Instruction via IIS
+
+1. Download the zipfile labelled Harvest H2O and extract file 
+2. Download or install a webserver such as IIS; If you do not have ISS here is a website to help you install
+https://www.howtogeek.com/112455/how-to-install-iis-8-on-windows-8/)
+3. In IIS go to default website and Add Application
+4. Create and Alias and connect the physical path of the unzipped HarvestH20 File
+5. Right click on the app and go to manage applicaiton and click on browse
+6. App should launch and be hosted locally on your computer

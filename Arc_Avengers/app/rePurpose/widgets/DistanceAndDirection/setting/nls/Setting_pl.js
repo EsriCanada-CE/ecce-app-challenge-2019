@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Styl opinii o odleg\u0142o\u015bci i kierunku",showTabLabel:"Poka\u017c tabel\u0119",feedbackShapeLabel:"Kszta\u0142t opinii",lineColorLabel:"Kolor linii",lineWidthLabel:"Szeroko\u015b\u0107 linii",feedbackLabel:"Etykieta opinii",textColorLabel:"Kolor tekstu",textSizeLabel:"Wielko\u015b\u0107 tekstu",tabErrorMessage:"Wid\u017cet musi by\u0107 skonfigurowany z co najmniej jedn\u0105 widoczn\u0105 tabel\u0105",lineLabel:"Linia",
+circleLabel:"Okr\u0105g",ellipseLabel:"Elipsa",ringsLabel:"Pier\u015bcienie",transparency:"Przezroczysto\u015b\u0107",_localized:{}}});

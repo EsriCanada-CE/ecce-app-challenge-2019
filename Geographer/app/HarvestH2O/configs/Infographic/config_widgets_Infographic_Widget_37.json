@@ -1,0 +1,219 @@
+{
+  "layout": {
+    "definition": [
+      {
+        "type": "column",
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "content": [
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "height": 36.012550776123554,
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "14550590973288635-2"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "14550590973288635-2"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "height": 34.264368699612696,
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "14550590973288635-3"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "14550590973288635-3"
+              }
+            ]
+          },
+          {
+            "type": "stack",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "height": 29.723080524263736,
+            "activeItemIndex": 0,
+            "content": [
+              {
+                "type": "component",
+                "isClosable": true,
+                "componentName": "jimu grid",
+                "componentState": {
+                  "id": "14550590973288635-4"
+                },
+                "reorderEnabled": true,
+                "title": "jimu grid",
+                "id": "14550590973288635-4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dijits": [
+    {
+      "id": "14550590973288635-1",
+      "type": "text",
+      "visible": false,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#fff"
+        },
+        "text": "TITLE OF THE INFOGRAPHIC"
+      }
+    },
+    {
+      "id": "14550590973288635-2",
+      "type": "image",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "image": "${appPath}/configs/Infographic/image1552969439383.png"
+      }
+    },
+    {
+      "id": "14550590973288635-3",
+      "type": "number",
+      "visible": true,
+      "config": {
+        "indicators": [
+          {
+            "value": [
+              471
+            ],
+            "operator": "smaller",
+            "valueColor": "#ff0000",
+            "uniqueID": "7124862507383296"
+          },
+          {
+            "value": [
+              471.01,
+              941.99
+            ],
+            "operator": "between",
+            "valueColor": "#ffff00",
+            "uniqueID": "10106520311253919"
+          },
+          {
+            "value": [
+              942
+            ],
+            "operator": "greater",
+            "valueColor": "#228b22",
+            "uniqueID": "07356700210967793"
+          }
+        ],
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 60,
+          "textColor": "#59bad8"
+        },
+        "dataFormat": {
+          "unit": "none",
+          "decimalPlaces": 2,
+          "prefix": "",
+          "suffix": ""
+        },
+        "statistic": {
+          "type": "FeatureStatistics",
+          "fieldName": "CostSaving",
+          "statisticsType": "sum"
+        }
+      }
+    },
+    {
+      "id": "14550590973288635-4",
+      "type": "text",
+      "visible": true,
+      "config": {
+        "background": {
+          "backgroundColor": "#222222",
+          "alignment": {
+            "horizontal": "center",
+            "vertical": "middle"
+          },
+          "link": ""
+        },
+        "font": {
+          "font": {
+            "fontFamily": "Arial",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          },
+          "fontSize": 16,
+          "textColor": "#fff"
+        },
+        "text": "The amount of money you could save if household water usage was supplemented with a rainwater harvesting system"
+      }
+    }
+  ],
+  "name": "number",
+  "wid": "14550590973288635",
+  "dataSource": {
+    "dataSourceType": "DATA_SOURCE_FEATURE_LAYER_FROM_MAP",
+    "name": "Run Off per building",
+    "layerId": "Run_Off_per_building_7838",
+    "useSelection": true,
+    "filterByExtent": true
+  }
+}

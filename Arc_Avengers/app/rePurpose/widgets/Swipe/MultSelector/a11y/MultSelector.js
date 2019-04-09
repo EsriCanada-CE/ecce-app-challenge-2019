@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/lang","dojo/on","dojo/query","dojo/_base/html","dijit/a11yclick"],function(c,g,e,a,h){return{a11y_init:function(){},a11y_initEvents:function(){this.own(g(this.selector,h,c.hitch(this,function(){this.selector.dropDownButton.toggleDropDown();for(var b=e(".dijitReset.dijitMenuItemLabel",this.selector.dropDown.domNode),d=0,c=b.length;d<c;d++){var f=b[d];a.attr(f,"title",f.innerText)}})))},a11y_initSelectorLabel:function(){var b=e(".dijitButtonText",this.selector.dropDownButton.buttonNode)[0];
+a.addClass(b,"hide");a.addClass(this.selector.dropDownButton.buttonNode,"hide");a.setAttr(this.selector.dropDownButton.titleNode,"tabindex",-1)}}});

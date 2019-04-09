@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Style de commentaires sur la distance et la direction",showTabLabel:"Afficher l\u2019onglet",feedbackShapeLabel:"Forme de commentaires",lineColorLabel:"Couleur de ligne",lineWidthLabel:"Largeur de la ligne",feedbackLabel:"\u00c9tiquette de commentaires",textColorLabel:"Couleur de texte",textSizeLabel:"Taille de texte",tabErrorMessage:"Le widget doit \u00eatre configur\u00e9 avec au moins un onglet affich\u00e9",lineLabel:"Ligne",
+circleLabel:"Cercle",ellipseLabel:"Ellipse",ringsLabel:"Anneaux",transparency:"Transparence",_localized:{}}});
