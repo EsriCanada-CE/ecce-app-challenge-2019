@@ -1,0 +1,14 @@
+Xi Sun:
+
+My name is  Xi Sun, I came from China. After graduated as the master of Electronic Engineer, I had been a software developer for over 10 years.
+
+Currently, I am a second year graduate student supervised by Professor Coady Yvonne in computer science department of University of Victoria. My thesis direction is the collaboration of Augmented reality in the urban design domain.
+
+I have used HoloLens as my visualization tools and studied the development on UWP with Unity for over one year. I am good at many languages such as C++, C#, Java,  as well as various computer technologies such as website design, database, etc.  I still have large enthusiasm to learn the new technologies. 
+
+-------------------------
+
+Tianming Wei: 
+
+Tianming Wei is currently a post doctoral fellow with Prof. Yvonne Coady in computer science department of University of Victoria. His areas of interest and research are data analysis and visualization in computer networks and network security enhancement and anomaly detection with neural network training. He is skillful with programming and web development and has experience with Esri ArcGIS services. 
+ 
