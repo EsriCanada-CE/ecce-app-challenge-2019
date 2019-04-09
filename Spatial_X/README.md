@@ -1,9 +1,9 @@
  # Team: Spatial X  | App: CityJaunt
 
 <p float="left">
-  <img src="https://github.com/yapajee/SpatialX/blob/master/Spatialx.png" alt="Spatial X"
+  <img src="https://github.com/EsriCanada-CE/ecce-app-challenge-2019/raw/master/Spatial_X/images/Spatialx.png" alt="Spatial X"
 	title="Team Name" width="150" height="120" />
-  <img src="https://github.com/yapajee/SpatialX/blob/master/CityJaunt.png" alt="CityJaunt"
+  <img src="https://github.com/EsriCanada-CE/ecce-app-challenge-2019/raw/master/Spatial_X/images/CityJaunt.png" alt="CityJaunt"
 	title="Team Name" width="150" height="120" />
 </p>
  
@@ -31,7 +31,7 @@ Every city is unique, dotted with local culture and heritage that make up the ur
 # **Team Profiles**
 
 <p align="center">
-  <img src="https://github.com/yapajee/SpatialX/blob/master/teamphoto.jpg" alt="Team photo"
+  <img src="https://github.com/EsriCanada-CE/ecce-app-challenge-2019/raw/master/Spatial_X/images/team.jpg" alt="Team photo"
 	title="Team Name" width="450" height="300" />
 </p>
 
@@ -56,7 +56,7 @@ Yuvna (centre-left) is a third-year Honours Geomatics student at the University 
 # **App Description and Features**
 
 <p align="center">
-  <img src="https://github.com/yapajee/SpatialX/blob/master/CityJaunt.png" alt="CityJaunt"
+  <img src="https://github.com/EsriCanada-CE/ecce-app-challenge-2019/raw/master/Spatial_X/images/CityJaunt.png" alt="CityJaunt"
 	title="Team Name" width="150" height="120"  />
 </p>
 
