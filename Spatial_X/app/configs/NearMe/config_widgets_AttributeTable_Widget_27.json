@@ -3125,7 +3125,7 @@
   "zoomToFeature": true,
   "intersectSearchedLocation": false,
   "enableProximitySearch": true,
-  "routeService": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+  "routeService": "https://utility.arcgis.com/usrsvcs/servers/c06eaee3d39f4c6289e004f45b0eb97c/rest/services/World/Route/NAServer/Route_World",
   "directionLengthUnit": {
     "bufferUnit": "UNIT_KILOMETER",
     "routeUnit": "KILOMETERS",
