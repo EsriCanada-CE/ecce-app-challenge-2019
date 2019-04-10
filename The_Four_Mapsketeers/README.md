@@ -4,7 +4,7 @@
 
 # Submission for the 2019 Esri App Challenge
 
-[CHECK OUT THE APP!](./index.html)  
+[CHECK OUT THE APP!](https://esricanada-ce.github.io/ecce-app-challenge-2019/The_Four_Mapsketeers/app/sustainAbility/)  
 
 ## Mission Statement
 

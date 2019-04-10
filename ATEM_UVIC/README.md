@@ -9,7 +9,7 @@ Urban designing is about shaping the physical features of cities, towns and vill
 
 This is an application designed for users who are embracing VR/AR world. To be more specific, an user can browse a 3D virtual Esri map with a Microsoft Hololens device (or using a HoloLens Emulator if no physical device availble). 
 
-![HoloLens App](https://github.com/NathanSun1981/ESRI-APP-Competition/blob/master/HololensApp01.png)
+![HoloLens App](./source/HololensApp01.png)
 
 A video demo can be checked from the link below: 
 
@@ -25,7 +25,7 @@ Built on top of the original application, this program has more new features ena
 
 “This is why I live here!” exclaims many a Victoriarites during cherry blossom season. Each spring, as the rainy season fades, city dwellers pack their sweaters away and are rewarded with one of the world’s most cheerful sites: thousands of cherry trees bursting with pink and white blooms.
 
-![Doug Clement Photography](https://github.com/NathanSun1981/ESRI-APP-Competition/blob/master/dougclementphotography.jpg)
+![Doug Clement Photography](./source/dougclementphotography.jpg)
 
 Victoria’s many parks and gardens are ideal showcases for the beloved trees, but there are also a number of urban places to view these pink and white beauties.
 
@@ -51,6 +51,6 @@ https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio
 
 3. Have fun and enjoy finding the cherry blossom!
 
-![Victoria Cherry Blossom](https://github.com/NathanSun1981/ESRI-APP-Competition/blob/master/VictoriaCherryBlossom.png)
+![Victoria Cherry Blossom](./source/VictoriaCherryBlossom.png)
 
 

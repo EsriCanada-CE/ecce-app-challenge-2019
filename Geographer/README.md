@@ -43,7 +43,7 @@ For more information about this refer to the About widget located in the top lef
 
 7. Team Member Bios
 
-![](Photo.jpg)
+![](./images/team.jpg)
 
 TEAM MEMBERS (From Left to Right): 
 
