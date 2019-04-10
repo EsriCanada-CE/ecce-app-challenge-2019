@@ -1,0 +1,11 @@
+Muhammad Usman:
+
+Muhammad is a PhD candidate in the Department of Electrical Engineering and Computer Science at York University. His research interests include crowd steering behaviors, computer-aided architectural design, architectural design analysis and optimization, spatial visualizations, virtual reality, and assistive technologies.
+
+Xuyang Han:
+
+Xuyang is a Master student in the Department of Earth and Space Science Engineering at York University. I am serving as research assistant on Crowdsource Bathymetry Project on Northern Canada region. I am skilled at GIS, data analytics and full-stack development.
+
+Aman Ullah
+
+Aman is a candidate for Master studies in department of Earth & Space Science Engineering at York University. After completing his undergrad in Computer Science, he joined the software development industry and polished skill set in Game Development. In 2018, he started research study with focused towards BIM, GIS and IoT oriented integrated system for smart cities application. Furthermore, his core skills is programming with best practices, and interests of software architectural designs, planning, development, analysis and optimization.

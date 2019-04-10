@@ -1,0 +1,6 @@
+html,
+body,
+#sub {
+  vertical-align: sub;
+  font-size: smaller;
+}

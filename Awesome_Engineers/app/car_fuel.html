@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Fuel</title>
+
+    <link rel="stylesheet" href="static/CSS/sample_layout.css">
+    <link rel="stylesheet" href="static/CSS/legend.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
+    <!--script src="http://d3js.org/d3.v3.min.js"></script-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://js.arcgis.com/4.11/"></script>
+    <script src="static/JS/fuelbasedlegend.js"></script>
+    <!--script src="static/JS/featurelayer_test.js"></script-->
+</head>
+
+<body>
+    <div id="viewDiv">
+        <div id="sidebar">
+            <div id="text">
+                <select id="vehicleYear"></select>
+                <select id="vehicleMake"></select>
+                <select id="vehicleModel"></select>
+
+                <!--label id="selectedYear"></label-->
+                <!--label id="selectedMake"></label-->
+                <!--label id="selectedModel"></label-->
+
+                <!--label>Search Radius:</label>
+            <input id="distance" type="range" min="10" max="10000" step="10" value="10000"/>
+            <span id="distance-value">10000</span><span> meters</span-->
+
+                <!--div id="formDiv"></div-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--
+  ArcGIS API for JavaScript, https://js.arcgis.com
+  For more information about the view-padding sample, read the original sample description at developers.arcgis.com.
+  https://developers.arcgis.com/javascript/latest/sample-code/view-padding/index.html
+  -->
+    <title>Map | Way2Share</title>
+    <link rel="shortcut icon" href="static/Imgs/carpool-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/CSS/sample_layout.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://js.arcgis.com/4.11/"></script>
+    <!--<script src="static/JS/sample_layout.js"></script>-->
+    <script src="static/JS/get_route_dup.js"></script>
+    <script src="static/JS/fuelbasedlegend_dup.js"></script>
+</head>
+
+<body>
+<section class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="static/Imgs/logo_way2share_new.png" width="100" height="35">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+                <a class="navbar-item" href="map.html">
+                    Map
+                </a>
+                <a class="navbar-item" href="document.html">
+                    Documentation
+                </a>
+                <a class="navbar-item" href="about%20us.html">
+                    About Us
+                </a>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<div id="viewDiv">
+    <div id="sidebar">
+        <div class="tabs is-marginless">
+            <ul>
+                <li class=" is-active tab-links" onclick="tab(event, 'tab-Route')"><a
+                        class="has-text-white-ter">Route</a></li>
+                <li class=" tab-links" onclick="tab(event, 'tab-Carpool')"><a class="has-text-white-ter">Carpool</a>
+                </li>
+                <li class=" tab-links" onclick="tab(event, 'tab-Display')"><a class="has-text-white-ter">Display</a>
+                </li>
+            </ul>
+        </div>
+        <div id="text">
+            <section class="tab-content" id="tab-Route">
+                <!--<h1 class="title is-3 has-text-white-bis">Carpool </h1>-->
+                <section>
+                    <p class="is-size-6">Choose your Car:</p>
+                    <div style="padding-left: 2rem">
+                        <p>Choose Year</p>
+                        <div class="select">
+                            <select id="vehicleYear" style="width: 200px"> </select>
+                        </div>
+                        <p>Choose Make</p>
+                        <div class="select">
+                            <select id="vehicleMake" style="width: 200px"> </select>
+                        </div>
+                        <p>Choose Model</p>
+                        <div class="select">
+                            <select id="vehicleModel" style="width: 200px"> </select>
+                        </div>
+                    </div>
+
+                </section>
+                <section>
+                    <div class="is-size-6">Set Home and Destination Markers:</div>
+                    <div class="well bluewell drawpanel" style="padding-left: 2rem">
+                        <button class="action-button" id="homeButton" type="button"
+                                title="Set Home"><i class="fas fa-home"></i></button>&nbsp;Set Home Marker<br/>
+                        <button class="action-button" id="destButton" type="button"
+                                title="Set Destination"><i class="fas fa-map-pin"></i></button>&nbsp;Set Destination
+                        Marker<br/>
+                        <button class="action-button" id="ResetBtn" type="button"
+                                title="Clear Markers"><i class="far fa-trash-alt"></i></button>&nbsp;Clear Markers
+                    </div>
+                </section>
+
+                <section>
+                    <p class="is-size-6">Route Information: </p>
+                    <div style="padding-left: 2rem">
+                        <p><span>Distance: </span> <span class="has-text-weight-bold title is-2" id="distance">0</span>
+                            km
+                        </p>
+                        <p><span>Driving Time: </span><span class="has-text-weight-bold title is-2"
+                                                            id="drive-time">0</span>
+                            min</p>
+                    </div>
+                    <p class="is-size-6">If you choose Carpool, how much you will save per year:</p>
+                    <div style="padding-left: 2rem">
+                        <p><span>Cost: </span><span class="has-text-weight-bold title is-2" id="cost">0</span> CND</p>
+                        <p><span>CO2 Emissions: </span><span class="has-text-weight-bold title is-2"
+                                                             id="co2-emission">0</span> Kilogram</p>
+                    </div>
+                </section>
+            </section>
+            <section id="tab-Carpool" class="tab-content">
+                <p class="is-size-5">Would like to Carpooling with other people?</p>
+                <p>Find available Carpool:</p>
+                <div style="padding-left: 2rem">
+                    <!--label>Search Radius:</label>
+                    <input id="distanceslider" type="range" min="10" max="5000" step="10" value="1000"/>
+                    <span id="distancevalue">1000</span><span> meters</span-->
+                    <button class="button is-success" id="find-carpool-btn">Find Carpool</button>
+                </div>
+                <p>Share with others:</p>
+                <div style="padding-left: 2rem">
+                    <label>Your Name</label>
+                    <input class="input" type="text" placeholder="Your Name" id = "user_name">
+                    <label>Your Email</label>
+                    <input class="input" type="text" placeholder="Your Email" id = "user_email">
+                    <button class="button is-info" id="share-route-Btn">Share Route</button>
+                </div>
+                <div id="destinationDetails"></div>
+                <div id="sourceScroll" class="out"></div>
+            </section>
+
+            <section id="tab-Display" class="tab-content">
+                <div id="baseMapSelect">
+                    <label>Change Base Map</label>
+                    <div class="select" id="baseMapSelect-content" style="padding-left: 2rem">
+                        <select id="selectBasemapPanel" class="form-control">
+                            <option value="streets" data-vector="streets-vector">Streets</option>
+                            <option value="satellite" data-vector="satellite">Satellite</option>
+                            <option value="hybrid" data-vector="hybrid">Hybrid</option>
+                            <option value="national-geographic" data-vector="national-geographic">National Geographic
+                            </option>
+                            <option value="topo" data-vector="topo-vector">Topographic</option>
+                            <option value="gray" data-vector="gray-vector">Gray</option>
+                            <option value="dark-gray" data-vector="dark-gray-vector">Dark Gray</option>
+                            <option value="osm" data-vector="osm">Open Street Map</option>
+                            <option value="dark-gray" data-vector="streets-night-vector">Streets Night</option>
+                            <option value="streets" data-vector="streets-navigation-vector" selected="">Streets Mobile
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="static/JS/show_modal.js"></script>
+</body>
+</html>
