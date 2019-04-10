@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/lang","dojo/Deferred","esri/geometry/webMercatorUtils","esri/SpatialReference"],function(k,g,h,l){var f={getProjectedGeometry:function(a,b,e){var c,d;c=new g;h.canProject(a,b)?(d=h.project(a,b),c.resolve(d)):e.project([a],b,function(a){d=a[0];c.resolve(d)});return c.promise},getMapCoordinates:function(a){var b;switch(a.type){case "polygon":b=a.getCentroid();break;case "polyline":b=a.getPoint(0,0);break;case "point":b=a}return b},getCoordinatesData:function(a,b){var e,c={},d;e=
+new g;d=new l(4326);c.MapSpatialReference=f.getMapCoordinates(a);f.getProjectedGeometry(c.MapSpatialReference,d,b).then(k.hitch(this,function(a){c.LatLong=a;e.resolve(c)}));return e.promise}};return f});

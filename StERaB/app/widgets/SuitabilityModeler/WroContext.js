@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/declare","./wro/Context","jimu/dijit/Message"],function(h,k,f){return h([k],{showError:function(b,a){a&&a.message?this.showMessage(b,a.message):this.showMessage(b,a)},showMessage:function(b,a){new f({titleLabel:b,message:a})},showMessages:function(b,a,g){var d,c,e;d=document.createElement("div");"string"===typeof a&&0<a.length&&(c=document.createElement("p"),c.appendChild(document.createTextNode(a)),d.appendChild(c));c=document.createElement("ul");d.appendChild(c);for(a=0;a<g.length;a++)e=
+document.createElement("li"),e.appendChild(document.createTextNode(g[a])),c.appendChild(e);new f({titleLabel:b,message:d})}})});

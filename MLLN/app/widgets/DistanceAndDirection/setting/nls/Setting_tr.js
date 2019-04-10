@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Mesafe ve Y\u00f6n Geri Bildirim Stili",showTabLabel:"Sekmeyi G\u00f6ster",feedbackShapeLabel:"Geri Bildirim \u015eekli",lineColorLabel:"\u00c7izgi Rengi",lineWidthLabel:"\u00c7izgi Geni\u015fli\u011fi",feedbackLabel:"Geri Bildirim Etiketi",textColorLabel:"Metin Rengi",textSizeLabel:"Metin Boyutu",tabErrorMessage:"Ara\u00e7, en az bir g\u00f6sterilen sekmeyle yap\u0131land\u0131r\u0131lmal\u0131d\u0131r",lineLabel:"\u00c7izgi",
+circleLabel:"Daire",ellipseLabel:"Elips",ringsLabel:"Halkalar",transparency:"\u015eeffafl\u0131k",_localized:{}}});

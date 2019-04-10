@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Att\u0101luma un virziena atsauksmju stils",showTabLabel:"R\u0101d\u012bt cilni",feedbackShapeLabel:"Atsauksmju forma",lineColorLabel:"L\u012bnijas kr\u0101sa",lineWidthLabel:"L\u012bnijas platums",feedbackLabel:"Atsauksmes nosaukums",textColorLabel:"Teksta kr\u0101sa",textSizeLabel:"Teksta lielums",tabErrorMessage:"Logr\u012bkam j\u0101b\u016bt konfigur\u0113tam ar vismaz vienu redzamu cilni",lineLabel:"L\u012bnija",
+circleLabel:"Aplis",ellipseLabel:"Elipse",ringsLabel:"Ri\u0146\u0137i",transparency:"Caursp\u012bd\u012bgums",_localized:{}}});

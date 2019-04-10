@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/array","dojo/_base/declare","./SettingContainer","./SettingObject","./SettingOptionsTable"],function(c,f,g,h,k){return f(h,{_inputControl:null,constructor:function(b,a,d){this.nls=a;this._inputControl=new k(null,"half-width","",a.propertyLabels.description,null,a.hints.selectionListOfOptionsToDisplay);this._mainDiv=(new g(null,"flexbox "+(d||""),"majorTrailingHorizGap",a.groupingLabels.labelFormats,"full-width",[this._inputControl])).div()},setConfig:function(){var b,a;b=[this._config[0]];
+a=this._config.slice(1);a=c.map(a,function(a){return a.name});a=0<a.length?[].concat(b,a):[b];this._inputControl.setValue(a)},getConfig:function(b,a){var d=this._config.slice(1),e;b=this._inputControl.getValue();e=[b[0]];c.forEach(b.slice(1),function(a){c.some(d,function(b){a===b.name&&e.push(b)})});this._config=e;0>this._config[0].indexOf("1")&&a.push(this.nls.problems.noNotificationLabelFormats)}})});

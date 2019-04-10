@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define(["dojo/_base/declare","dojo/Stateful","esri/toolbars/draw","esri/graphic"],function(b,d,e,f){return b([e,d],{startPoint:null,_setStartPoint:function(a){this._set("startPoint",a)},addStartGraphic:function(a,b,c){this.removeStartGraphic(c);this.startGraphic=new f(a,b);c.add(this.startGraphic)},removeStartGraphic:function(a){this.startGraphic&&a.remove(this.startGraphic);this.startGraphic=null}})});

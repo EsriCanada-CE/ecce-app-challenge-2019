@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/Filter/nls/strings":{_widgetLabel:"Filter",toggleTip:"Klikk for \u00e5 vise/skjule filterinnstillinger",toggleOn:"Trykk p\u00e5 veksleknappen for \u00e5 sl\u00e5 p\u00e5 gjeldende filter",toggleOff:"Trykk p\u00e5 veksleknappen for \u00e5 sl\u00e5 av gjeldende filter",createCustomFilter:"Opprett egendefinert filter",customFilter:"Egendefinert filter",toggleCustomFilter:"Aktiver eller deaktiver filter",toggleCustomFilters:"Sl\u00e5 p\u00e5 eller av alle filtre",_localized:{}}});

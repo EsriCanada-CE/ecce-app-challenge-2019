@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/ThreatAnalysis/setting/nls/strings":{transparencyLabel:"Prosojnost",outline:"Obroba",fill:"Polnilo (barva se uporablja le, \u010de je slog nastavljen na enobarvno polnilo)",style:"Slog",mandatoryLabel:"Obvezna razdalja za evakuacijo",mandatoryButtonLabel:"Konfiguriraj nastavitve za obvezno razdaljo za evakuacijo",safeLabel:"Varna razdalja za evakuacijo",safeButtonLabel:"Konfiguriraj nastavitve za varno razdaljo za evakuacijo",lineStyles:{esriSLSDash:"\u010crtica",esriSLSDashDot:"\u010crtica pika",
+esriSLSDashDotDot:"\u010crtica pika pika",esriSLSDot:"Pika",esriSLSLongDash:"Dolga \u010drtica",esriSLSLongDashDot:"Dolga \u010drtica pika",esriSLSNull:"Brez vrednosti",esriSLSShortDash:"Kratka \u010drtica",esriSLSShortDashDot:"Kratka \u010drtica pika",esriSLSShortDashDotDot:"Kratka \u010drtica pika pika",esriSLSShortDot:"Kratka pika",esriSLSSolid:"Enobarvno"},fillStyles:{esriSFSBackwardDiagonal:"Nazaj",esriSFSCross:"Kri\u017e",esriSFSDiagonalCross:"Diagonalno",esriSFSForwardDiagonal:"Naprej",esriSFSHorizontal:"Horizontalno",
+esriSFSNull:"Brez vrednosti",esriSFSSolid:"Enobarvno",esriSFSVertical:"Vertikalno"},_localized:{}}});
