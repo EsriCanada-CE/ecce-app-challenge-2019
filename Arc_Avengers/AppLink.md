@@ -1,3 +1,7 @@
+Hosted on GitHub:
+
+- Main app: [https://esricanada-ce.github.io/ecce-app-challenge-2019/Arc_Avengers/app/rePurpose/](https://esricanada-ce.github.io/ecce-app-challenge-2019/Arc_Avengers/app/rePurpose/)
+
 Hosted in ArcGIS Online:
 
 - Main app: [https://arcg.is/1DeCLb](https://arcg.is/1DeCLb)
