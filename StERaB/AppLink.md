@@ -1,7 +1,7 @@
 Hosted on GitHub:
 
-- [https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/](https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/)
-
+- Main app: [https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/](https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/)
+- Carbon Emission Calculator: [https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/calculator.html](https://esricanada-ce.github.io/ecce-app-challenge-2019/StERaB/app/calculator.html)
 
 Hosted in ArcGIS Online:
 

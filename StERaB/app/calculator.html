@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carbon Emission Calculator</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <div class='container bg-info text-white rounded-lg text-center'>
+            <h1>Carbon Emmision Calculator</h1>
+            <h3>What is your car's MPG?</h3>
+            <input id='mpg' type='number' placeholder='Insert MPG'/>
+            <h3>What is the total commute distance? (in miles)</h3>
+            <input id='dist' type='number' placeholder='Insert Distance'/>
+          <h3>How often is this trip per week?</h3>
+            <input id='trips' type='number' placeholder='Insert Trips'/>
+            <br/>
+            <br/>
+            <button class='btn-secondary rounded-sm' onclick='calcCO2()'>Calculate Carbon Footprint</button>
+          <br/>
+          <br/>
+        </div>
+        <br/>
+        <div class='container text-center'>
+            <h2>Your Carbon Footprint is:</h2>
+            <h1 id='result4' class='bg-success rounded-lg'></h1>
+            <h3>g CO2e / mile</h3>
+          <br/>
+            <h2>Your Carbon Footprint this trip is:</h2>
+            <h1 id='result' class='bg-success rounded-lg'></h1>
+            <h3>kg CO2e</h3>
+          <br/>
+           <h2>Your Carbon Footprint per week is:</h2>
+            <h1 id='result2' class='bg-success rounded-lg'></h1>
+            <h3>kg CO2e</h3>
+                    <br/>
+           <h2>Your Carbon Footprint per year is:</h2>
+            <h1 id='result3' class='bg-success rounded-lg'></h1>
+            <h3>kg CO2e</h3>
+        </div>
+        
+        <script>
+            var res = document.getElementById('result');
+            var res2 = document.getElementById("result2");
+            var res3 = document.getElementById("result3");
+            var res4 = document.getElementById("result4");
+            var mpg = document.getElementById('mpg');
+            var dist = document.getElementById('dist');
+            var trip = document.getElementById('trips');
+            function calcCO2() {
+                var x = mpg.value;
+                var y = dist.value;
+                var z = trips.value;
+                var calc4 = (8.8/x)*1000;
+                var calc = (calc4 * y)/1000;
+                var calc2 = (calc * z);
+                var calc3 = (calc2*52);
+                calc = calc.toFixed(2);
+                calc2 = calc2.toFixed(2);
+                calc3 = calc3.toFixed(2);
+                calc4 = calc4.toFixed(1);
+                console.log('calc is: ' + calc);
+                res.innerHTML = calc;
+                res2.innerHTML = calc2;
+                res3.innerHTML = calc3;
+                res4.innerHTML = calc4;
+            }
+        </script>
+    </body>
+</html>
