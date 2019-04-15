@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Estilo de Feedback de Dist\u00e2ncia e Dire\u00e7\u00e3o",showTabLabel:"Exibir Separador",feedbackShapeLabel:"Formato de Feedback",lineColorLabel:"Cor de Linha",lineWidthLabel:"Largura de Linha",feedbackLabel:"R\u00f3tulo de Feedback",textColorLabel:"Cor do Texto",textSizeLabel:"Tamanho do Texto",tabErrorMessage:"O widget tem de ser configurado com o m\u00ednimo de um separador vis\u00edvel",lineLabel:"Linha",circleLabel:"C\u00edrculo",
+ellipseLabel:"Elipse",ringsLabel:"An\u00e9is",transparency:"Transpar\u00eancia",_localized:{}}});

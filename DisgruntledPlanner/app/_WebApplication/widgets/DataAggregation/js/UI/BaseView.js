@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define("dojo/_base/declare dojo/_base/lang dojo/_base/array dojo/dom-class dijit/_WidgetBase dijit/_TemplatedMixin dijit/_WidgetsInTemplateMixin dojo/Evented dojo/query".split(" "),function(b,e,f,c,g,h,k,l,m){return b([g,h,k,l],{baseClass:"cf-base-view",declaredClass:"CriticalFacilities.BaseView",parent:null,nls:null,map:null,appConfig:null,config:null,theme:"",styleColor:"",constructor:function(a){e.mixin(this,a)},postCreate:function(){this.inherited(arguments)},startup:function(){this.updateImageNodes()},
+updateImageNodes:function(){var a=this.pageContainer.isDarkTheme,d=a?"next-arrow-img":"next-arrow-img-white",b=a?"next-arrow-img-white":"next-arrow-img",a=m("."+d,this.domNode);f.forEach(a,function(a){c.remove(a,d);c.add(a,b)})},setStyleColor:function(a){this.styleColor=a}})});

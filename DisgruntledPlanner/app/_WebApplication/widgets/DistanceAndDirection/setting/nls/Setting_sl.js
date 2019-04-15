@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Slog povratnih informacij razdalje in navodil za pot",showTabLabel:"Poka\u017ei zavihek",feedbackShapeLabel:"Oblika povratnih informacij",lineColorLabel:"Barva linije",lineWidthLabel:"Debelina obrobe linije",feedbackLabel:"Napis za povratne informacije",textColorLabel:"Barva besedila",textSizeLabel:"Velikost besedila",tabErrorMessage:"Pripomo\u010dek mora biti konfiguriran tako, da je prikazan vsaj en zavihek",lineLabel:"\u010crta",
+circleLabel:"Krog",ellipseLabel:"Elipsa",ringsLabel:"Obro\u010di",transparency:"Prosojnost",_localized:{}}});
