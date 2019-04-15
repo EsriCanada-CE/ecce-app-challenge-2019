@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.15/esri/copyright.txt and http://www.arcgis.com/apps/webappbuilder/copyright.txt for details.
+//>>built
+define({"widgets/DistanceAndDirection/setting/nls/strings":{feedbackStyleLabel:"Ki\u1ec3u Ph\u1ea3n h\u1ed3i Kho\u1ea3ng c\u00e1ch v\u00e0 H\u01b0\u1edbng",showTabLabel:"Hi\u1ec7n Th\u1ebb",feedbackShapeLabel:"H\u00ecnh d\u1ea1ng Ph\u1ea3n h\u1ed3i",lineColorLabel:"M\u00e0u \u0110\u01b0\u1eddng",lineWidthLabel:"Chi\u1ec1u r\u1ed9ng \u0111\u01b0\u1eddng",feedbackLabel:"Nh\u00e3n Ph\u1ea3n h\u1ed3i",textColorLabel:"M\u00e0u V\u0103n b\u1ea3n",textSizeLabel:"Ki\u0301ch c\u01a1\u0303 V\u0103n ba\u0309n",
+tabErrorMessage:"Ph\u1ea3i c\u1ea5u h\u00ecnh ti\u1ec7n \u00edch c\u00f3 \u00edt nh\u1ea5t m\u1ed9t th\u1ebb hi\u1ec3n th\u1ecb",lineLabel:"\u0110\u01b0\u1eddng",circleLabel:"H\u00ecnh tr\u00f2n",ellipseLabel:"H\u00ecnh Elip",ringsLabel:"V\u00f2ng",transparency:"\u0110\u1ed9 trong su\u1ed1t",_localized:{}}});
