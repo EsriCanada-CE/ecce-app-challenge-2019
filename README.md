@@ -6,4 +6,13 @@ For 2019, teams participating the challenge were tasked to create an app that ad
 
 ## App Challenge Results:
 
-All of the apps will reviewed by three external judges, and the team with the best aggregate score will be chosen as the winner.  Stay tuned for final results to be announced around the end of April.
+All of the apps were reviewed by three external judges, and the team with the best aggregate score was chosen as the winner.  Esri Canada is pleased to announce the winning team for the 2019 App Challenge:
+
+**[SpectaculAR](https://esricanada-ce.github.io/appchallenge/2019/teams/uw/SpectaculAR/) from University of Waterloo**
+
+Members of this team win a trip to this year's Esri User Conference in San Diego.
+
+The first and second runners-up for the challenge are, respectively:
+
+* **[GISquad](https://esricanada-ce.github.io/appchallenge/2019/teams/mac/GISquad/) from McMaster University**
+* **[Baes of Fundy](https://esricanada-ce.github.io/appchallenge/2019/teams/cogs/Baes_of_Fundy/) from COGS**
