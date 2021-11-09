@@ -5,7 +5,7 @@
 ### ECCE App Challenge 2019
 
 ### Team Members
-Yorgan Pitt, Edward Seh-Taylor, Sean Leipe, Raj Ubhi 
+Yorgan Pitt, Ed Taylor, Sean Leipe, Raj Ubhi 
 
 ### Story Map Overview 
 
