@@ -9,7 +9,7 @@ Odysseas Vlachopoulos: Web Mapping Application implementation, Data processing
 
 Mingke Li: Lead Web Mapping Application implementation
 
-Toni McRae: Media marketing
+Team Member 3: Media marketing
 
 
 ## Mission Statement
